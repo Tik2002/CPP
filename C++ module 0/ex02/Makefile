@@ -4,16 +4,16 @@ YELLOW	= \033[1;33m
 RESET	= \033[0;37m
 SKY		= \033[1;36m
 
-CPP = c++
-SRCSPATH = ./srcs/
-INCLPATH = ./includes/
+CPP = c++ -std=c++98
+SRCSPATH = ./
+INCLPATH = ./
 
 SRCS = $(wildcard $(SRCSPATH)*.cpp)
 OBJS = $(patsubst $(SRCSPATH)%.cpp, $(SRCSPATH)%.o, $(SRCS))
 
 CFLAGS = -Wall -Wextra -Werror $(foreach H, $(INCLPATH), -I$(H))
-#-fsanitize=address -g
-NAME = megaphone
+# -g-fsanitize=address
+NAME = find_accounts
 
 all : $(NAME)
 
@@ -21,7 +21,7 @@ $(NAME) : $(OBJS)
 	@$(CPP) $^ -o $@
 	@echo "$(GREEN) Executable file has been created $(RESET)"
 
-$(SRCSPATH)%.o : $(SRCSPATH)%.c
+$(SRCSPATH)%.o : $(SRCSPATH)%.cpp
 	@$(CPP) $(CFLAGS) -c $< -o $@
 	@echo "$(YELLOW) Object files have been created $(RESET)"
 

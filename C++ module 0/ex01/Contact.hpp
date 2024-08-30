@@ -1,16 +1,22 @@
 #include <iostream>
 
+using std::string;
+using std::getline;
+using std::cout;
+using std::endl;
+using std::cin;
+
 class Contact
 {
 private:
-	std::string name;
-	std::string	s_name;
-	std::string	nickname;
-	std::string	secret;
-	std::string	p_number;
-	static void	set_length(std::string &src);
-	static void	set_strings(std::string &dest, std::string str);
-	static void	check_phone_number(std::string &src);
+	string name;
+	string	s_name;
+	string	nickname;
+	string	secret;
+	string	p_number;
+	static void	_set_strings(string &dest, string str);
+	static void	_check_phone_number(string &src);
+	static string	_string_for_option(string src);
 public:
 	Contact();
 	void	set_contact();

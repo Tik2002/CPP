@@ -8,7 +8,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This program built for i386-apple-darwin11.3.0
  
 
-# Make data base, printed on Fri Aug 30 15:56:58 2024
+# Make data base, printed on Fri Aug 30 19:06:25 2024
 
 # Variables
 
@@ -23,9 +23,10 @@ VSCODE_CRASH_REPORTER_PROCESS_TYPE = extensionHost
 # automatic
 @D = $(patsubst %/,%,$(dir $@))
 # automatic
+ 
 @F = $(notdir $@)
 # makefile
-CURDIR := /Users/tigpetro/Desktop/42cursus/CPP/C++ module 0/ex01
+CURDIR := /Users/tigpetro/Desktop/42cursus/CPP/C++ module 0/ex02
 # makefile
 SHELL = /bin/sh
 # environment
@@ -39,7 +40,7 @@ MAKEFILE_LIST :=  Makefile
 # makefile (from `Makefile', line 12)
 OBJS = $(patsubst $(SRCSPATH)%.cpp, $(SRCSPATH)%.o, $(SRCS))
 # makefile (from `Makefile', line 7)
-CPP = c++
+CPP = c++ -std=c++98
 # environment
 VSCODE_CWD = /
 # environment
@@ -59,7 +60,7 @@ SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.JNVbEGekb9/Listeners
 # automatic
 %F = $(notdir $%)
 # environment
-PWD = /Users/tigpetro/Desktop/42cursus/CPP/C++ module 0/ex01
+PWD = /Users/tigpetro/Desktop/42cursus/CPP/C++ module 0/ex02
 # environment
 ORIGINAL_XDG_CURRENT_DESKTOP = undefined
 # makefile (from `Makefile', line 2)
@@ -70,7 +71,6 @@ VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
 HOME = /Users/tigpetro
 # default
 MAKEFILEPATH := /Applications/Xcode.app/Contents/Developer/Makefiles
- 
 # environment
 VSCODE_CODE_CACHE_PATH = /Users/tigpetro/Library/Application Support/Code/CachedData/abd2f3db4bdb28f9e95536dfa84d8479f1eb312d
 # environment
@@ -102,7 +102,7 @@ USER = tigpetro
 # makefile
 .DEFAULT_GOAL := all
 # makefile (from `Makefile', line 16)
-NAME = phonebook
+NAME = find_accounts
 # environment
 LESS = -R
 # automatic
@@ -168,7 +168,7 @@ LANG = C
 # environment
 VSCODE_PID = 16444
 # variable set hash-table stats:
-# Load=77/1024=8%, Rehash=0, Collisions=4/117=3%
+# Load=77/1024=8%, Rehash=0, Collisions=4/110=4%
 
 # Pattern-specific Variable Values
 
@@ -176,9 +176,9 @@ VSCODE_PID = 16444
 
 # Directories
 
-# . (device 16777224, inode 1545929): 9 files, no impossibilities.
+# . (device 16777224, inode 1545930): 11 files, no impossibilities.
 
-# 9 files, no impossibilities in 1 directories.
+# 11 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -192,20 +192,42 @@ VSCODE_PID = 16444
 
 # Files
 
-all: phonebook
+all: find_accounts
 #  Phony target (prerequisite of .PHONY).
 #  Command-line target.
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has been updated.
-#  Needs to be updated (-q is set).
+#  Successfully updated.
 # variable set hash-table stats:
-# Load=0/32=0%, Rehash=0, Collisions=0/7=0%
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
 .PHONY: all clean fclean re
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
+
+# Not a target:
+Account.cpp:
+#  Implicit rule search has been done.
+#  Last modified 2024-08-30 19:05:04
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+tests.o: tests.cpp
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `tests'
+#  Last modified 2024-08-30 19:04:39
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 25):
+	@$(CPP) $(CFLAGS) -c $< -o $@
+	@echo "$(YELLOW) Object files have been created $(RESET)"
+	
 
 # Not a target:
 .SUFFIXES:
@@ -216,40 +238,11 @@ all: phonebook
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2024-08-29 20:59:13
+#  Last modified 2024-08-30 19:04:35
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
-
-Contact.o: Contact.cpp
-#  Implicit rule search has been done.
-#  Implicit/static pattern stem: `Contact'
-#  File does not exist.
-#  File has been updated.
-#  Needs to be updated (-q is set).
-# automatic
-# @ := Contact.o
-# automatic
-# % := 
-# automatic
-# * := Contact
-# automatic
-# + := Contact.cpp
-# automatic
-# | := 
-# automatic
-# < := Contact.cpp
-# automatic
-# ^ := Contact.cpp
-# automatic
-# ? := Contact.cpp
-# variable set hash-table stats:
-# Load=8/32=25%, Rehash=0, Collisions=1/17=6%
-#  commands to execute (from `Makefile', line 25):
-	@$(CPP) $(CFLAGS) -c $< -o $@
-	@echo "$(YELLOW) Object files have been created $(RESET)"
-	
 
 fclean: clean
 #  Phony target (prerequisite of .PHONY).
@@ -261,11 +254,36 @@ fclean: clean
 	@echo "$(RED) Executable file has been deleted $(RESET)"
 	
 
+Account.o: Account.cpp
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `Account'
+#  Last modified 2024-08-30 19:05:06
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 25):
+	@$(CPP) $(CFLAGS) -c $< -o $@
+	@echo "$(YELLOW) Object files have been created $(RESET)"
+	
+
 # Not a target:
 .DEFAULT:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
+
+find_accounts: Account.o tests.o
+#  Implicit rule search has not been done.
+#  Last modified 2024-08-30 19:05:06
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 21):
+	@$(CPP) $^ -o $@
+	@echo "$(GREEN) Executable file has been created $(RESET)"
+	
 
 re: fclean all
 #  Phony target (prerequisite of .PHONY).
@@ -284,40 +302,16 @@ clean:
 	
 
 # Not a target:
-main.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-# Not a target:
-Contact.cpp:
+tests.cpp:
 #  Implicit rule search has been done.
-#  Last modified 2024-08-29 22:21:30
+#  Last modified 2024-08-30 17:41:42
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
-phonebook: Contact.o Phonebook.o main.o
-#  Implicit rule search has not been done.
-#  File does not exist.
-#  File has been updated.
-#  Needs to be updated (-q is set).
-# variable set hash-table stats:
-# Load=0/32=0%, Rehash=0, Collisions=0/7=0%
-#  commands to execute (from `Makefile', line 21):
-	@$(CPP) $^ -o $@
-	@echo "$(GREEN) Executable file has been created $(RESET)"
-	
-
-# Not a target:
-Phonebook.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
 # files hash-table stats:
-# Load=13/1024=1%, Rehash=0, Collisions=0/40=0%
+# Load=13/1024=1%, Rehash=0, Collisions=0/42=0%
 # VPATH Search Paths
 
 # No `vpath' search paths.
@@ -329,6 +323,6 @@ Phonebook.o:
 # strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
 # strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
 
-# Finished Make data base on Fri Aug 30 15:56:58 2024
+# Finished Make data base on Fri Aug 30 19:06:25 2024
 
  

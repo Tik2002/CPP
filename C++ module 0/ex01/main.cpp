@@ -1,23 +1,31 @@
-#include "PhoneBook.hpp"
+#include <PhoneBook.hpp>
 
 void	add_contact(PhoneBook &book, int i)
 {
 	book.get_contact(i).set_contact();
 }
 
+bool	check_index(string &index)
+{
+	return (index.length() == 1 && (index[0] < '9' && index[0] > '0'));
+}
+
 void	search_contact(PhoneBook &book)
 {
 	for(int i = 0; i < contact_size; i++)
 	{
-		std::cout << i + 1 << "   ";
+		cout << i + 1;
 		book.get_contact(i).print_contact_list();
 	}
-	std::cout << "Choose contact by index" << std::endl;
-	int index;
-	std::cin >> index;
-	if (index > contact_size || index < 1)
-		std::cout << "Wrong index!" << std::endl;
-	book.get_contact(index - 1).print_contact();
+	cout << "Choose contact by index" << endl;
+	string index;
+	getline(cin,index,'\n');
+	while (!check_index(index))
+	{
+		cout << "Wrong index!" << endl;
+		getline (cin,index,'\n');
+	}
+	book.get_contact(index[0] - 49).print_contact();
 }
 
 int	main()
@@ -25,9 +33,9 @@ int	main()
 	PhoneBook book;
 	int	i = 0;
 
-	std::string input;
-	std::cin >> input;
-	while (input != "EXIT" && !input.empty())
+	string input;
+	getline (cin,input,'\n');
+	while (input != "EXIT")
 	{
 		if (input == "ADD")
 		{
@@ -38,8 +46,13 @@ int	main()
 		else if (input == "SEARCH")
 			search_contact(book);
 		else
-			std::cout << "Bad input, your options are ADD, SEARCH or EXIT!" << std::endl;
-		std::cin >> input;
+		{
+			input.clear();
+			cout << "Bad input, your options are ADD, SEARCH or EXIT!" << endl;
+		}
+		getline (cin,input,'\n');
+		while(input.empty())
+			getline (cin,input,'\n');
 	}
 	return 0;
 }

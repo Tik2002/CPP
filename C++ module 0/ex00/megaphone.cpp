@@ -1,20 +1,12 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   megaphone.cpp                                      :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: tigpetro <tigpetro@student.42.fr>          +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/08/26 15:46:08 by tigpetro          #+#    #+#             */
-/*   Updated: 2024/08/26 17:25:39 by tigpetro         ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
-
 #include <iostream>
 
-void	print(std::string str)
+using std::string;
+using std::cout;
+using std::endl;
+
+void	print(string str)
 {
-	std::cout << str;
+	cout << str;
 }
 
 void	no_input()
@@ -22,15 +14,15 @@ void	no_input()
 	print("* LOUD AND UNBEARABLE FEEDBACK NOISE *");
 }
 
-void	to_upper(std::string &str)
+void	to_upper(string &str)
 {
-	for(int i = 0; i < str.length(); i++)
+	for(size_t i = 0; i < str.length(); i++)
 		str[i] = toupper(str[i]);
 }
 
-bool string_is_space(std::string &str)
+bool string_is_space(string &str)
 {
-	for(int i = 0; i < str.length(); i++)
+	for(size_t i = 0; i < str.length(); i++)
 	{
 		if (str[i] != ' ')
 			return (false);
@@ -42,7 +34,7 @@ void	eval(char **av)
 {
 	for (int i = 1; av[i]; i++)
 	{
-		std::string str = av[i];
+		string str = av[i];
 		if (str.empty() || string_is_space(str))
 			continue ;
 		str = str.substr(str.find_first_not_of(' '), str.find_last_not_of(' ') + 1);
@@ -59,7 +51,7 @@ bool check(char **av)
 {
 	for(int i = 1; av[i]; i++)
 	{
-		std::string str = av[i];
+		string str = av[i];
 		if (str.empty())
 			continue ;
 		if (!string_is_space(str))
@@ -74,6 +66,6 @@ int	main(int ac, char **av)
 		eval(av);
 	else
 		no_input();
-	std::cout << std::endl;
+	cout << endl;
 	return (0);
 }

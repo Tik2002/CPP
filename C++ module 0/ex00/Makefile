@@ -10,7 +10,7 @@ SRCSPATH = ./
 SRCS = $(wildcard $(SRCSPATH)*.cpp)
 OBJS = $(patsubst $(SRCSPATH)%.cpp, $(SRCSPATH)%.o, $(SRCS))
 
-CFLAGS = -g++ -Wall -Wextra -Werror
+CFLAGS = -Wall -Wextra -Werror
 #-fsanitize=address
 NAME = megaphone
 
@@ -20,7 +20,7 @@ $(NAME) : $(OBJS)
 	@$(CPP) $^ -o $@
 	@echo "$(GREEN) Executable file has been created $(RESET)"
 
-$(SRCSPATH)%.o : $(SRCSPATH)%.c
+$(SRCSPATH)%.o : $(SRCSPATH)%.cpp
 	@$(CPP) $(CFLAGS) -c $< -o $@
 	@echo "$(YELLOW) Object files have been created $(RESET)"
 
