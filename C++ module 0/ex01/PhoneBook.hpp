@@ -1,3 +1,4 @@
+#pragma once
 #include <Contact.hpp>
 #define contact_size 8
 
