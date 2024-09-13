@@ -37,7 +37,6 @@ void	Harl::complain(string level)
 	}
 }
 
-
 Harl::Harl()
 {
 }
