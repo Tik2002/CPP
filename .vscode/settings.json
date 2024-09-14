@@ -1,0 +1,11 @@
+{
+	"makefile.extensionOutputFolder": "./.vscode",
+	"files.associations": {
+		"algorithm": "cpp",
+		"iostream": "cpp",
+		"iosfwd": "cpp",
+		"ostream": "cpp",
+		"memory": "cpp",
+		"chrono": "cpp"
+	}
+}

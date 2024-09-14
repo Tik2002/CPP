@@ -1,0 +1,28 @@
+{
+	"makefile.extensionOutputFolder": "./.vscode",
+	"files.associations": {
+		"iosfwd": "cpp",
+		"iostream": "cpp",
+		"new": "cpp",
+		"fstream": "cpp",
+		"algorithm": "cpp",
+		"string": "cpp",
+		"filesystem": "cpp",
+		"ostream": "cpp",
+		"__locale": "cpp",
+		"__string": "cpp",
+		"string_view": "cpp",
+		"__bit_reference": "cpp",
+		"__hash_table": "cpp",
+		"unordered_map": "cpp",
+		"system_error": "cpp",
+		"memory": "cpp",
+		"complex": "cpp",
+		"iterator": "cpp",
+		"atomic": "cpp",
+		"chrono": "cpp",
+		"ios": "cpp",
+		"istream": "cpp",
+		"streambuf": "cpp"
+	}
+}
