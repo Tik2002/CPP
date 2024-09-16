@@ -11,7 +11,7 @@ INCLPATH = ./
 SRCS = $(wildcard $(SRCSPATH)*.cpp)
 OBJS = $(patsubst $(SRCSPATH)%.cpp, $(SRCSPATH)%.o, $(SRCS))
 
-CFLAGS = -Wall -Wextra -Werror $(foreach H, $(INCLPATH), -I$(H))
+CFLAGS = -g -Wall -Wextra -Werror $(foreach H, $(INCLPATH), -I$(H))
 # -g-fsanitize=address
 NAME = a.out
 

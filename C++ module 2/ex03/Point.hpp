@@ -12,6 +12,8 @@ public:
 	Point(const float x, const float y);
 	Point(const Point& other);
 	Point &operator=(const Point& other);
+	static bool __in_triangle__(const Point& a, const Point& b, const Point& c, const Point& point);
+	static bool __in_row__(const Point& a, const Point& b, const Point& point);
 	~Point();
 };
 

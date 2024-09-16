@@ -8,8 +8,8 @@
 			"type": "lldb",
 			"request": "launch",
 			"name": "Debug",
-			"program": "${workspaceFolder}/functor",
-			"args": ["file", " ", "boba"],
+			"program": "${workspaceFolder}/a.out",
+			"args": [""],
 			"cwd": "${workspaceFolder}"
 		}
 	]

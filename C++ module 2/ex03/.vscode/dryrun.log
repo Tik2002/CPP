@@ -1,12 +1,15 @@
 make --dry-run --always-make --keep-going --print-directory
 make: Entering directory `/Users/tigpetro/Desktop/42cursus/CPP/C++ module 2/ex03'
-c++ -std=c++98 -Wall -Wextra -Werror  -I./ -c Fixed.cpp -o Fixed.o
+c++ -std=c++98 -g -Wall -Wextra -Werror  -I./ -c Fixed.cpp -o Fixed.o
 echo "\033[1;33m Object files have been created \033[0;37m"
-c++ -std=c++98 -Wall -Wextra -Werror  -I./ -c Point.cpp -o Point.o
+c++ -std=c++98 -g -Wall -Wextra -Werror  -I./ -c Point.cpp -o Point.o
 echo "\033[1;33m Object files have been created \033[0;37m"
-c++ -std=c++98 -Wall -Wextra -Werror  -I./ -c main.cpp -o main.o
+ 
+c++ -std=c++98 -g -Wall -Wextra -Werror  -I./ -c bsp.cpp -o bsp.o
 echo "\033[1;33m Object files have been created \033[0;37m"
-c++ -std=c++98 Fixed.o Point.o main.o -o a.out
+c++ -std=c++98 -g -Wall -Wextra -Werror  -I./ -c main.cpp -o main.o
+echo "\033[1;33m Object files have been created \033[0;37m"
+c++ -std=c++98 Fixed.o Point.o bsp.o main.o -o a.out
 echo "\033[1;32m Executable file has been created \033[0;37m"
 make: Leaving directory `/Users/tigpetro/Desktop/42cursus/CPP/C++ module 2/ex03'
  
