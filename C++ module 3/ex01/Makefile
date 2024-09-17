@@ -13,7 +13,7 @@ OBJS = $(patsubst $(SRCSPATH)%.cpp, $(SRCSPATH)%.o, $(SRCS))
 
 CFLAGS = -Wall -Wextra -Werror $(foreach H, $(INCLPATH), -I$(H))
 # -g-fsanitize=address
-NAME = clapTrap
+NAME = scavTrap
 
 all : $(NAME)
 
