@@ -1,0 +1,6 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory `/Users/tigpetro/Desktop/42cursus/CPP/C++ module 4'
+make: Leaving directory `/Users/tigpetro/Desktop/42cursus/CPP/C++ module 4'
+ 
+make: *** No targets specified and no makefile found.  Stop.
+
