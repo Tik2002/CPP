@@ -10,34 +10,8 @@ Animal::Animal(const Animal& other)
 Animal &Animal::operator=(const Animal& other)
 {
 	cout << "Animal Copy assignment called" << endl;
-	const_cast<string&>(this->name) = other.name;
-	this->HP = other.HP;
-	this->E = other.E;
-	this->D = other.D;
+	this->name = other.name;
 	return (*this);
-}
-
-void Animal::attack(const string& target)
-{
-	if (this->HP > 0)
-	{
-		if (this->E > 0)
-		{
-			cout << "Animal " << this->name << " attacks " << target << ", causing " << this->D << " points of damage!" << endl;
-			--this->E;
-		}
-		else
-			cout << "Animal " << this->name << " has no energy left to attack!" << endl;
-	}
-}
-
-void Animal::takeDamage(unsigned int amount)
-{
-	if (this->HP > 0)
-	{
-		cout << "Animal " << this->name << " taked " << amount << " amount of damage!" << endl;
-		INT_MAX > amount ? this->HP -= amount : this->HP = 0;
-	}
 }
 
 void Animal::beRepaired(unsigned int amount)

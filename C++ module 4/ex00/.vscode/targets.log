@@ -8,7 +8,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This program built for i386-apple-darwin11.3.0
  
 
-# Make data base, printed on Wed Sep 18 18:08:04 2024
+# Make data base, printed on Wed Sep 18 18:20:29 2024
 
 # Variables
 
@@ -176,7 +176,6 @@ MAKELEVEL := 0
 LANG = C
 # environment
 TERM = xterm-256color
- 
 # environment
 VSCODE_PID = 2886
 # variable set hash-table stats:
@@ -316,7 +315,8 @@ main.o:
 # Not a target:
 Animal.cpp:
 #  Implicit rule search has been done.
-#  Last modified 2024-09-18 16:33:45
+ 
+#  Last modified 2024-09-18 18:13:27
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -335,6 +335,6 @@ Animal.cpp:
 # strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
 # strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
 
-# Finished Make data base on Wed Sep 18 18:08:04 2024
+# Finished Make data base on Wed Sep 18 18:20:29 2024
 
  
