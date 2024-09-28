@@ -4,6 +4,7 @@ c++ -std=c++98 -Wall -Wextra -Werror  -I./ -c ClapTrap.cpp -o ClapTrap.o
 echo "\033[1;33m Object files have been created \033[0;37m"
 c++ -std=c++98 -Wall -Wextra -Werror  -I./ -c DiamondTrap.cpp -o DiamondTrap.o
 echo "\033[1;33m Object files have been created \033[0;37m"
+ 
 c++ -std=c++98 -Wall -Wextra -Werror  -I./ -c FragTrap.cpp -o FragTrap.o
 echo "\033[1;33m Object files have been created \033[0;37m"
 c++ -std=c++98 -Wall -Wextra -Werror  -I./ -c ScavTrap.cpp -o ScavTrap.o

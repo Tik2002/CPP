@@ -4,7 +4,7 @@ YELLOW	= \033[1;33m
 RESET	= \033[0;37m
 SKY		= \033[1;36m
 
-CPP = c++ -std=c++98
+CPP = c++ -std=c++98 -pedantic
 SRCSPATH = ./
 INCLPATH = ./
 
@@ -13,7 +13,7 @@ OBJS = $(patsubst $(SRCSPATH)%.cpp, $(SRCSPATH)%.o, $(SRCS))
 
 CFLAGS = -Wall -Wextra -Werror $(foreach H, $(INCLPATH), -I$(H))
 # -g-fsanitize=address
-NAME = animals
+NAME = game
 
 all : $(NAME)
 

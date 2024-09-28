@@ -6,8 +6,9 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # PARTICULAR PURPOSE.
 
 # This program built for i386-apple-darwin11.3.0
+ 
 
-# Make data base, printed on Thu Sep 19 17:17:43 2024
+# Make data base, printed on Sat Sep 21 17:43:05 2024
 
 # Variables
 
@@ -24,7 +25,7 @@ VSCODE_CRASH_REPORTER_PROCESS_TYPE = extensionHost
 # automatic
 @F = $(notdir $@)
 # makefile
-CURDIR := /Users/tigpetro/Desktop/42cursus/CPP/C++ module 4/ex00
+CURDIR := /Users/tigpetro/Desktop/42cursus/CPP/C++ module 4/ex02
 # makefile
 SHELL = /bin/sh
 # environment
@@ -42,7 +43,7 @@ CPP = c++ -std=c++98
 # environment
 VSCODE_CWD = /
 # environment
-Apple_PubSub_Socket_Render = /private/tmp/com.apple.launchd.BbTIfjlidL/Render
+Apple_PubSub_Socket_Render = /private/tmp/com.apple.launchd.srUCgM2B9b/Render
 # environment
 PATH = /usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/munki:/Library/Frameworks/Mono.framework/Versions/Current/Commands
 # environment
@@ -54,11 +55,11 @@ ELECTRON_RUN_AS_NODE = 1
 # environment
 LS_COLORS = di=1;36:ln=35:so=32:pi=33:ex=31:bd=34;46:cd=34;43:su=30;41:sg=30;46:tw=30;42:ow=30;43
 # environment
-SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.Ydy0xfDhJm/Listeners
+SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.wC9VGqEH1K/Listeners
 # automatic
 %F = $(notdir $%)
 # environment
-PWD = /Users/tigpetro/Desktop/42cursus/CPP/C++ module 4/ex00
+PWD = /Users/tigpetro/Desktop/42cursus/CPP/C++ module 4/ex02
 # environment
 ORIGINAL_XDG_CURRENT_DESKTOP = undefined
 # makefile (from `Makefile', line 2)
@@ -144,6 +145,7 @@ YELLOW = \033[1;33m
 # environment
 ITERM_SESSION_ID = w0t0p0:00808A13-E09B-483F-8825-9FD10DC5FE33
 # environment
+ 
 COLORFGBG = 7;0
 # environment
 __CF_USER_TEXT_ENCODING = 0x19191:0:0
@@ -176,7 +178,7 @@ LANG = C
 # environment
 TERM = xterm-256color
 # environment
-VSCODE_PID = 62202
+VSCODE_PID = 21019
 # variable set hash-table stats:
 # Load=83/1024=8%, Rehash=0, Collisions=4/123=3%
 
@@ -186,9 +188,9 @@ VSCODE_PID = 62202
 
 # Directories
 
-# . (device 16777224, inode 1732416): 12 files, no impossibilities.
+# . (device 16777224, inode 1749852): 14 files, no impossibilities.
 
-# 12 files, no impossibilities in 1 directories.
+# 14 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -201,6 +203,21 @@ VSCODE_PID = 62202
 # 1 implicit rules, 0 (0.0%) terminal.
 
 # Files
+
+# Not a target:
+AAnimal.cpp:
+#  Implicit rule search has been done.
+#  Last modified 2024-09-21 17:40:44
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+Brain.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
 
 all: animals
 #  Phony target (prerequisite of .PHONY).
@@ -217,7 +234,7 @@ all: animals
 #  Modification time never checked.
 #  File has not been updated.
 
-animals: Animal.o Cat.o Dog.o main.o
+animals: AAnimal.o Brain.o Cat.o Dog.o main.o
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has been updated.
@@ -238,34 +255,34 @@ animals: Animal.o Cat.o Dog.o main.o
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2024-09-18 19:20:25
+#  Last modified 2024-09-21 17:40:44
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
-Animal.o: Animal.cpp
+AAnimal.o: AAnimal.cpp
 #  Implicit rule search has been done.
-#  Implicit/static pattern stem: `Animal'
+#  Implicit/static pattern stem: `AAnimal'
 #  File does not exist.
 #  File has been updated.
 #  Needs to be updated (-q is set).
 # automatic
-# @ := Animal.o
+# @ := AAnimal.o
 # automatic
 # % := 
 # automatic
-# * := Animal
+# * := AAnimal
 # automatic
-# + := Animal.cpp
+# + := AAnimal.cpp
 # automatic
 # | := 
 # automatic
-# < := Animal.cpp
+# < := AAnimal.cpp
 # automatic
-# ^ := Animal.cpp
+# ^ := AAnimal.cpp
 # automatic
-# ? := Animal.cpp
+# ? := AAnimal.cpp
 # variable set hash-table stats:
 # Load=8/32=25%, Rehash=0, Collisions=1/17=6%
 #  commands to execute (from `Makefile', line 25):
@@ -318,23 +335,13 @@ main.o:
 #  File has not been updated.
 
 # Not a target:
-Animal.cpp:
-#  Implicit rule search has been done.
-#  Last modified 2024-09-19 17:17:23
- 
-#  File has been updated.
-#  Successfully updated.
-# variable set hash-table stats:
-# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
-
-# Not a target:
 Dog.o:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
 
 # files hash-table stats:
-# Load=14/1024=1%, Rehash=0, Collisions=0/42=0%
+# Load=15/1024=1%, Rehash=0, Collisions=1/44=2%
 # VPATH Search Paths
 
 # No `vpath' search paths.
@@ -346,6 +353,6 @@ Dog.o:
 # strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
 # strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
 
-# Finished Make data base on Thu Sep 19 17:17:43 2024
+# Finished Make data base on Sat Sep 21 17:43:05 2024
 
  
