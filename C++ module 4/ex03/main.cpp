@@ -3,26 +3,6 @@
 #include <Character.hpp>
 #include <MateriaSource.hpp>
 
-// int main()
-// {
-// 	Character def;
-// 	Ice ob1;
-// 	Ice ob2;
-// 	Ice ob3;
-// 	Ice ob4;
-// 	Ice ob5;
-
-// 	def.equip(&ob1);
-// 	def.equip(ob2.clone());
-// 	def.equip(ob3.clone());
-// 	def.unequip(2);
-// 	def.equip(ob4.clone());
-// 	def.equip(ob5.clone());
-// 	Character def2 = def;
-// 	def2.use(2, def);
-// 	system("leaks game");
-// }
-
 int main()
 {
 IMateriaSource* src = new MateriaSource();
