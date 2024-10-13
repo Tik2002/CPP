@@ -8,8 +8,8 @@ using std::cin;
 using std::endl;
 using std::ostream;
 using std::exception;
-#include <Form.hpp>
-class Form;
+#include <AForm.hpp>
+class AForm;
 
 class Bureaucrat
 {
@@ -23,7 +23,7 @@ public:
 	const string& getName() const;
 	void inc_grade();
 	void dec_grade();
-	void signForm(Form& form);
+	void signForm(AForm& form);
 	int getGrade() const;
 
 	struct GradeTooHighException : public exception

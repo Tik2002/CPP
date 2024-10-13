@@ -29,7 +29,7 @@ void Bureaucrat::dec_grade() {++this->grade;validate(grade);}
 
 void Bureaucrat::inc_grade() {--this->grade;validate(grade);}
 
-void Bureaucrat::signForm(Form& form)
+void Bureaucrat::signForm(AForm& form)
 {
 	if (this->getGrade() > form.getSignGrade())
 	{

@@ -12,8 +12,9 @@ using std::exception;
 
 class Bureaucrat
 {
-public:
+protected:
 	Bureaucrat();
+public:
 	Bureaucrat(const string& name, const int grade);
 	Bureaucrat(const Bureaucrat& other);
 	Bureaucrat& operator=(const Bureaucrat& other);

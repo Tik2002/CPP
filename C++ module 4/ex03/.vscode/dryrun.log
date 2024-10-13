@@ -2,9 +2,9 @@ make --dry-run --always-make --keep-going --print-directory
 make: Entering directory `/Users/tigpetro/Desktop/42cursus/CPP/C++ module 4/ex03'
 c++ -std=c++98 -pedantic -Wall -Wextra -Werror  -I./ -c AMateria.cpp -o AMateria.o
 echo "\033[1;33m Object files have been created \033[0;37m"
+ 
 c++ -std=c++98 -pedantic -Wall -Wextra -Werror  -I./ -c Character.cpp -o Character.o
 echo "\033[1;33m Object files have been created \033[0;37m"
- 
 c++ -std=c++98 -pedantic -Wall -Wextra -Werror  -I./ -c Cure.cpp -o Cure.o
 echo "\033[1;33m Object files have been created \033[0;37m"
 c++ -std=c++98 -pedantic -Wall -Wextra -Werror  -I./ -c Ice.cpp -o Ice.o

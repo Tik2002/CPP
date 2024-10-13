@@ -31,16 +31,11 @@ int Form::getSignGrade() const {return this->sign_grade;}
 
 int Form::getExecuteGrade() const {return this->execute_grade;}
 
-void Form::setSign() {this->is_signed = true;}
-
 void Form::beSigned(const Bureaucrat& bur)
 {
-	if (bur.getGrade() < this->getSignGrade())
+	if (bur.getGrade() > this->getSignGrade())
 		throw Form::GradeTooLowException();
-	else if (this->getSign())
-		cout << "Form already signed." << endl;
-	else
-		this->setSign();
+	this->is_signed = true;
 }
 
 Form::~Form(){}

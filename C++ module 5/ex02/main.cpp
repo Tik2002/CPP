@@ -1,4 +1,4 @@
-#include <Form.hpp>
+#include <AForm.hpp>
 
 int main()
 {
@@ -8,7 +8,7 @@ int main()
 		Bureaucrat ob3("DOG", 13);
 		cout << ob << endl;
 		Bureaucrat ob2("ChLP", 25);
-		Form form1("B23", 24, 25);
+		AForm form1("B23", 24, 25);
 		cout << form1 << endl;
 		ob.signForm(form1);
 		ob3.signForm(form1);

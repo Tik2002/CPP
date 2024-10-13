@@ -1,4 +1,4 @@
-make --dry-run --keep-going --print-directory
+make --dry-run --always-make --keep-going --print-directory
 make: Entering directory `/Users/tigpetro/Desktop/42cursus/CPP/C++ module 5'
 make: Leaving directory `/Users/tigpetro/Desktop/42cursus/CPP/C++ module 5'
  
