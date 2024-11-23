@@ -34,7 +34,7 @@ void PresidentialPardonForm::execute(const Bureaucrat& bur) const
 	cout << this->name << " has been pardoned by Zaphod Beeblebrox.\n";
 }
 
-PresidentialPardonForm* PresidentialPardonForm::create(const string& name) const
+AForm* PresidentialPardonForm::create(const string& name)
 {
 	return (new PresidentialPardonForm(name, 25, 5));
 }

@@ -1,9 +1,5 @@
 #include <Bureaucrat.hpp>
 
-using pshurik::Bureaucrat;
-using pshurik::cout;
-using pshurik::endl;
-
 int main()
 {
 	try

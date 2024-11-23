@@ -11,7 +11,7 @@ public:
 	RobotomyRequestForm(const RobotomyRequestForm& other);
 	RobotomyRequestForm& operator=(const RobotomyRequestForm& other);
 	~RobotomyRequestForm();
-	RobotomyRequestForm* create(const string& name) const;
+	static AForm* create(const string& name);
 	void execute(const Bureaucrat& bur) const;
 
 	struct GradeTooLowExceptionExec : public exception

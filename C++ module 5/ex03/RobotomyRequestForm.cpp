@@ -46,7 +46,7 @@ void RobotomyRequestForm::execute(const Bureaucrat& bur) const
 	}
 }
 
-RobotomyRequestForm* RobotomyRequestForm::create(const string& name) const
+AForm* RobotomyRequestForm::create(const string& name)
 {
 	return new RobotomyRequestForm(name, 72, 45);
 }

@@ -11,12 +11,11 @@ public:
 	AForm(const string& name, const int sign_grade, const int execute_grade);
 	AForm(const AForm& other);
 	AForm& operator=(const AForm& other);
-	~AForm();
+	virtual ~AForm();
 	const string& getName() const;
 	bool getSign() const;
 	void beSigned(const Bureaucrat& bur);
 	virtual void execute(const Bureaucrat& executor) const = 0;
-	virtual AForm* clone(const string& name) const = 0;
 	int getSignGrade() const;
 	int getExecuteGrade() const;
 

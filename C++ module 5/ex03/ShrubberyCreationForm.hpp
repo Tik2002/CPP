@@ -27,7 +27,7 @@ public:
 	ShrubberyCreationForm(const ShrubberyCreationForm& other);
 	ShrubberyCreationForm& operator=(const ShrubberyCreationForm& other);
 	~ShrubberyCreationForm();
-	RobotomyRequestForm* create(const string& name) const;
+	static AForm* create(const string& name);
 	void execute(const Bureaucrat& bur) const;
 
 	struct GradeTooLowExceptionExec : public exception

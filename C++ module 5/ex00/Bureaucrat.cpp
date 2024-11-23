@@ -1,7 +1,4 @@
 #include <Bureaucrat.hpp>
-using pshurik::Bureaucrat;
-using pshurik::string;
-using pshurik::ostream;
 
 static void	validate(const int grade)
 {
@@ -33,7 +30,7 @@ void Bureaucrat::inc_grade() {--this->grade;validate(grade);}
 
 Bureaucrat::~Bureaucrat(){}
 
-ostream& pshurik::operator<<(ostream& os, const Bureaucrat& obj)
+ostream& operator<<(ostream& os, const Bureaucrat& obj)
 {
 	os << obj.getName() << ", bureaucrat grade " << obj.getGrade();
 	return os;

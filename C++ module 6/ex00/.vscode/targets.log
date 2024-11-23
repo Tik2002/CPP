@@ -8,7 +8,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This program built for i386-apple-darwin11.3.0
  
 
-# Make data base, printed on Mon Nov 18 21:13:05 2024
+# Make data base, printed on Sat Nov 23 21:36:15 2024
 
 # Variables
 
@@ -18,9 +18,6 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 ?F = $(notdir $?)
 # environment
 VSCODE_CRASH_REPORTER_PROCESS_TYPE = extensionHost
-# environment
- 
-LC_CTYPE = UTF-8
 # automatic
 ?D = $(patsubst %/,%,$(dir $?))
 # automatic
@@ -28,11 +25,11 @@ LC_CTYPE = UTF-8
 # automatic
 @F = $(notdir $@)
 # makefile
-CURDIR := /Users/tigpetro/Desktop/42cursus/CPP/C++ module 5/ex01
+CURDIR := /Users/tigpetro/Desktop/42cursus/CPP/C++ module 6/ex00
 # makefile
 SHELL = /bin/sh
 # environment
-VSCODE_NLS_CONFIG = {"locale":"ru","osLocale":"ru","availableLanguages":{},"_languagePackSupport":true}
+VSCODE_NLS_CONFIG = {"locale":"en-us","osLocale":"en","availableLanguages":{},"_languagePackSupport":true}
 # environment
 _ = /usr/bin/make
 # makefile (from `Makefile', line 14)
@@ -46,7 +43,7 @@ CPP = c++ -std=c++98
 # environment
 VSCODE_CWD = /
 # environment
-Apple_PubSub_Socket_Render = /private/tmp/com.apple.launchd.pDB2I6wFvN/Render
+Apple_PubSub_Socket_Render = /private/tmp/com.apple.launchd.moKxxTeh1V/Render
 # environment
 PATH = /usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/munki:/Library/Frameworks/Mono.framework/Versions/Current/Commands
 # environment
@@ -54,15 +51,16 @@ LSCOLORS = Gxfxcxdxbxegedabagacad
 # environment
 ELECTRON_RUN_AS_NODE = 1
 # default
+ 
 .FEATURES := target-specific order-only second-expansion else-if archives jobserver check-symlink
 # environment
 LS_COLORS = di=1;36:ln=35:so=32:pi=33:ex=31:bd=34;46:cd=34;43:su=30;41:sg=30;46:tw=30;42:ow=30;43
 # environment
-SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.luDFie2UBK/Listeners
+SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.1C5NSW3Rgl/Listeners
 # automatic
 %F = $(notdir $%)
 # environment
-PWD = /Users/tigpetro/Desktop/42cursus/CPP/C++ module 5/ex01
+PWD = /Users/tigpetro/Desktop/42cursus/CPP/C++ module 6/ex00
 # environment
 ORIGINAL_XDG_CURRENT_DESKTOP = undefined
 # makefile (from `Makefile', line 2)
@@ -108,7 +106,7 @@ USER = tigpetro
 # environment
 TERM_SESSION_ID = w0t0p0:F2AB8475-8408-4C6E-AEBB-E00B68F601EF
 # makefile (from `Makefile', line 16)
-NAME = bureaucrat
+NAME = convert
 # environment
 LESS = -R
 # automatic
@@ -138,7 +136,7 @@ MFLAGS = -Rrqp
 # environment
 TERM_PROGRAM_VERSION = 3.2.5
 # environment
-XPC_SERVICE_NAME = com.microsoft.VSCode.2660
+XPC_SERVICE_NAME = com.microsoft.VSCode.1904
 # automatic
 +D = $(patsubst %/,%,$(dir $+))
 # makefile (from `Makefile', line 3)
@@ -151,6 +149,8 @@ ITERM_SESSION_ID = w0t0p0:F2AB8475-8408-4C6E-AEBB-E00B68F601EF
 COLORFGBG = 7;0
 # environment
 __CF_USER_TEXT_ENCODING = 0x19191:0:0
+# environment
+COMMAND_MODE = unix2003
 # default
 MAKEFILES := 
 # makefile (from `Makefile', line 8)
@@ -165,6 +165,8 @@ PAGER = less
 LC_ALL = C
 # makefile (from `Makefile', line 4)
 RESET = \033[0;37m
+# environment
+SECURITYSESSIONID = 186a7
 # automatic
 ^F = $(notdir $^)
 # default
@@ -180,10 +182,9 @@ LANG = C
 # environment
 TERM = xterm-256color
 # environment
-VSCODE_PID = 4888
+VSCODE_PID = 24136
 # variable set hash-table stats:
- 
-# Load=84/1024=8%, Rehash=0, Collisions=4/124=3%
+# Load=85/1024=8%, Rehash=0, Collisions=4/118=3%
 
 # Pattern-specific Variable Values
 
@@ -191,9 +192,9 @@ VSCODE_PID = 4888
 
 # Directories
 
-# . (device 16777224, inode 1801980): 9 files, no impossibilities.
+# . (device 16777224, inode 1938930): 10 files, no impossibilities.
 
-# 9 files, no impossibilities in 1 directories.
+# 10 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -207,29 +208,33 @@ VSCODE_PID = 4888
 
 # Files
 
-# Not a target:
-Bureaucrat.cpp:
-#  Implicit rule search has been done.
-#  Last modified 2024-10-12 15:29:24
-#  File has been updated.
-#  Successfully updated.
-# variable set hash-table stats:
-# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
-
-all: bureaucrat
+all: convert
 #  Phony target (prerequisite of .PHONY).
 #  Command-line target.
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has been updated.
-#  Needs to be updated (-q is set).
+#  Successfully updated.
 # variable set hash-table stats:
-# Load=0/32=0%, Rehash=0, Collisions=0/7=0%
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
 .PHONY: all clean fclean re
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
+
+ScalarConverter.o: ScalarConverter.cpp
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `ScalarConverter'
+#  Last modified 2024-11-22 21:33:50
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 25):
+	@$(CPP) $(CFLAGS) -c $< -o $@
+	@echo "$(YELLOW) Object files have been created $(RESET)"
+	
 
 # Not a target:
 .SUFFIXES:
@@ -240,52 +245,20 @@ all: bureaucrat
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2024-10-07 17:08:43
+#  Last modified 2024-11-19 20:58:29
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
-Bureaucrat.o: Bureaucrat.cpp
+# Not a target:
+main.cpp:
 #  Implicit rule search has been done.
-#  Implicit/static pattern stem: `Bureaucrat'
-#  File does not exist.
+#  Last modified 2024-11-19 20:59:05
 #  File has been updated.
-#  Needs to be updated (-q is set).
-# automatic
-# @ := Bureaucrat.o
-# automatic
-# % := 
-# automatic
-# * := Bureaucrat
-# automatic
-# + := Bureaucrat.cpp
-# automatic
-# | := 
-# automatic
-# < := Bureaucrat.cpp
-# automatic
-# ^ := Bureaucrat.cpp
-# automatic
-# ? := Bureaucrat.cpp
+#  Successfully updated.
 # variable set hash-table stats:
-# Load=8/32=25%, Rehash=0, Collisions=1/17=6%
-#  commands to execute (from `Makefile', line 25):
-	@$(CPP) $(CFLAGS) -c $< -o $@
-	@echo "$(YELLOW) Object files have been created $(RESET)"
-	
-
-bureaucrat: Bureaucrat.o Form.o main.o
-#  Implicit rule search has not been done.
-#  File does not exist.
-#  File has been updated.
-#  Needs to be updated (-q is set).
-# variable set hash-table stats:
-# Load=0/32=0%, Rehash=0, Collisions=0/7=0%
-#  commands to execute (from `Makefile', line 21):
-	@$(CPP) $^ -o $@
-	@echo "$(GREEN) Executable file has been created $(RESET)"
-	
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
 fclean: clean
 #  Phony target (prerequisite of .PHONY).
@@ -296,12 +269,6 @@ fclean: clean
 	@rm -f $(NAME)
 	@echo "$(RED) Executable file has been deleted $(RESET)"
 	
-
-# Not a target:
-Form.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
 
 # Not a target:
 .DEFAULT:
@@ -326,13 +293,41 @@ clean:
 	
 
 # Not a target:
-main.o:
+ScalarConverter.cpp:
+#  Implicit rule search has been done.
+#  Last modified 2024-11-22 21:33:47
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+main.o: main.cpp
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: `main'
+#  Last modified 2024-11-22 19:30:12
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 25):
+	@$(CPP) $(CFLAGS) -c $< -o $@
+	@echo "$(YELLOW) Object files have been created $(RESET)"
+	
+
+convert: ScalarConverter.o main.o
 #  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+#  Last modified 2024-11-22 21:33:50
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+#  commands to execute (from `Makefile', line 21):
+	@$(CPP) $^ -o $@
+	@echo "$(GREEN) Executable file has been created $(RESET)"
+	
 
 # files hash-table stats:
-# Load=13/1024=1%, Rehash=0, Collisions=0/40=0%
+# Load=13/1024=1%, Rehash=0, Collisions=0/42=0%
 # VPATH Search Paths
 
 # No `vpath' search paths.
@@ -344,6 +339,6 @@ main.o:
 # strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
 # strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
 
-# Finished Make data base on Mon Nov 18 21:13:05 2024
+# Finished Make data base on Sat Nov 23 21:36:15 2024
 
  

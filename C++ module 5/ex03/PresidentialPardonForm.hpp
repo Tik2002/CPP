@@ -11,7 +11,7 @@ public:
 	PresidentialPardonForm(const PresidentialPardonForm& other);
 	PresidentialPardonForm& operator=(const PresidentialPardonForm& other);
 	~PresidentialPardonForm();
-	PresidentialPardonForm* create(const string& name) const;
+	static AForm* create(const string& name);
 	void execute(const Bureaucrat& bur) const;
 
 	struct GradeTooLowExceptionExec : public exception

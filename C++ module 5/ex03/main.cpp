@@ -1,6 +1,4 @@
-#include <ShrubberyCreationForm.hpp>
-#include <RobotomyRequestForm.hpp>
-#include <PresidentialPardonForm.hpp>
+#include <Intern.hpp>
 
 int main()
 {
@@ -12,6 +10,10 @@ int main()
 		ob.executeForm(form1);
 		ob.signForm(form1);
 		form1.execute(ob);
+		Intern chlpik;
+		AForm* form99 = chlpik.makeForm("shrubbery request", "Akckpake");
+		ob.executeForm(*form99);
+		delete form99;
 	}
 	catch(const exception& e)
 	{

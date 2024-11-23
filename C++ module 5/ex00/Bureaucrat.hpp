@@ -1,8 +1,6 @@
 #pragma once
 
 #include <iostream>
-namespace pshurik
-{
 using std::string;
 using std::cout;
 using std::cin;
@@ -38,6 +36,3 @@ private:
 };
 
 ostream& operator<<(ostream& os, const Bureaucrat& obj);
-
-}
-

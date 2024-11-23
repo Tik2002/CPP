@@ -41,7 +41,7 @@ void ShrubberyCreationForm::execute(const Bureaucrat& bur) const
 		clog << "Wrong permissions of file\n";
 }
 
-ShrubberyCreationForm* ShrubberyCreationForm::create(const string& name) const
+AForm* ShrubberyCreationForm::create(const string& name)
 {
 	return new ShrubberyCreationForm(name, 145, 137);
 }
