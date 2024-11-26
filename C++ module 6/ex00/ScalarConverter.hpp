@@ -1,6 +1,7 @@
 #pragma once
 
 #include <iostream>
+#include <cstdlib>
 #include <sstream>
 using std::string;
 using std::stringstream;

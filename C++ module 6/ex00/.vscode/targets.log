@@ -1,190 +1,269 @@
-make all --print-data-base --no-builtin-variables --no-builtin-rules --question
-# GNU Make 3.81
-# Copyright (C) 2006  Free Software Foundation, Inc.
-# This is free software; see the source for copying conditions.
-# There is NO warranty; not even for MERCHANTABILITY or FITNESS FOR A
-# PARTICULAR PURPOSE.
+make.exe all --print-data-base --no-builtin-variables --no-builtin-rules --question
+# GNU Make 4.4.1
+# Built for Windows32
+# Copyright (C) 1988-2023 Free Software Foundation, Inc.
+# License GPLv3+: GNU GPL version 3 or later <https://gnu.org/licenses/gpl.html>
+# This is free software: you are free to change and redistribute it.
+# There is NO WARRANTY, to the extent permitted by law.
 
-# This program built for i386-apple-darwin11.3.0
- 
-
-# Make data base, printed on Sat Nov 23 21:36:15 2024
+# Make data base, printed on Tue Nov 26 23:46:38 2024
 
 # Variables
 
-# automatic
-<D = $(patsubst %/,%,$(dir $<))
-# automatic
-?F = $(notdir $?)
+# environment
+SYSTEMDRIVE = C:
+# environment
+LC_ALL = C
+# environment
+USERPROFILE = C:\Users\Admin
+# environment
+DEVECOSTUDIO_VM_OPTIONS = C:\Users\Admin\Downloads\JetBrains PyCharm Professional 2022.2.3\ja-netfilter-all\vmoptions\devecostudio.vmoptions
+# environment
+LOCALAPPDATA = C:\Users\Admin\AppData\Local
+# environment
+WSLENV = ELECTRON_RUN_AS_NODE/w:
 # environment
 VSCODE_CRASH_REPORTER_PROCESS_TYPE = extensionHost
-# automatic
-?D = $(patsubst %/,%,$(dir $?))
-# automatic
-@D = $(patsubst %/,%,$(dir $@))
-# automatic
-@F = $(notdir $@)
-# makefile
-CURDIR := /Users/tigpetro/Desktop/42cursus/CPP/C++ module 6/ex00
-# makefile
-SHELL = /bin/sh
 # environment
-VSCODE_NLS_CONFIG = {"locale":"en-us","osLocale":"en","availableLanguages":{},"_languagePackSupport":true}
+VSCODE_CWD = C:\Users\Admin\Desktop\kali\CPP\C++ module 6\ex00
 # environment
-_ = /usr/bin/make
-# makefile (from `Makefile', line 14)
-CFLAGS = -Wall -Wextra -Werror $(foreach H, $(INCLPATH), -I$(H))
-# makefile (from `Makefile', line 1)
-MAKEFILE_LIST :=  Makefile
-# makefile (from `Makefile', line 12)
-OBJS = $(patsubst $(SRCSPATH)%.cpp, $(SRCSPATH)%.o, $(SRCS))
-# makefile (from `Makefile', line 7)
-CPP = c++ -std=c++98
+CHOCOLATEYINSTALL = C:\ProgramData\chocolatey
 # environment
-VSCODE_CWD = /
+SYSTEMROOT = C:\Windows
 # environment
-Apple_PubSub_Socket_Render = /private/tmp/com.apple.launchd.moKxxTeh1V/Render
+PROCESSOR_LEVEL = 6
 # environment
-PATH = /usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/munki:/Library/Frameworks/Mono.framework/Versions/Current/Commands
-# environment
-LSCOLORS = Gxfxcxdxbxegedabagacad
-# environment
-ELECTRON_RUN_AS_NODE = 1
+PSMODULEPATH = C:\Program Files\WindowsPowerShell\Modules;C:\Windows\system32\WindowsPowerShell\v1.0\Modules
 # default
- 
-.FEATURES := target-specific order-only second-expansion else-if archives jobserver check-symlink
+MAKE_COMMAND := C:/ProgramData/chocolatey/lib/make/tools/install/bin/make.exe
+# automatic
+@D = $(patsubst %/,%,$(patsubst %\,%,$(dir $@)))
 # environment
-LS_COLORS = di=1;36:ln=35:so=32:pi=33:ex=31:bd=34;46:cd=34;43:su=30;41:sg=30;46:tw=30;42:ow=30;43
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_4952_YBAAVCCBLEGQMBOA
 # environment
-SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.1C5NSW3Rgl/Listeners
+STUDIO_VM_OPTIONS = C:\Users\Admin\Downloads\JetBrains PyCharm Professional 2022.2.3\ja-netfilter-all\vmoptions\studio.vmoptions
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# default
+.VARIABLES := 
+# automatic
+%D = $(patsubst %/,%,$(patsubst %\,%,$(dir $%)))
+# environment
+IGCCSVC_DB = AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA//ET5yI6JU+4QD3ZHGzy5gQAAAACAAAAAAAQZgAAAAEAACAAAACNtdBmnsfM9lLQQA3V9nkdqkQxVlVJvr4M8FTGUI1J+wAAAAAOgAAAAAIAACAAAAAEodHRNwTocJjvX8am2Jr3adXKjunPcntqocmijGHmLWAAAACy1uycuNlEclGN1168K4e4cparT3E/RYPw8kEiTP+WGcUb/6D/5j2dvEp4rzDSPxq2wttTInPmxQaGoCXWkwJ8N9YSyMwXTgEK3iuvz/kYXikPTCm/XB4lDLDOrd+W/jRAAAAAvPflXj+DX8BgixGzTZ3/Bx+MXkYV6fpRgwVuSk+fgr8aD0edJFmynxins35M55oLjdNYLTKd1aoMGHPfOyeqbw==
+# automatic
+^D = $(patsubst %/,%,$(patsubst %\,%,$(dir $^)))
 # automatic
 %F = $(notdir $%)
 # environment
-PWD = /Users/tigpetro/Desktop/42cursus/CPP/C++ module 6/ex00
+VSCODE_CODE_CACHE_PATH = C:\Users\Admin\AppData\Roaming\Code\CachedData\f1a4fb101478ce6ec82fe9627c43efbf9e98c813
 # environment
-ORIGINAL_XDG_CURRENT_DESKTOP = undefined
-# makefile (from `Makefile', line 2)
-GREEN = \033[1;32m
-# environment
-VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
-# environment
-HOME = /Users/tigpetro
+LANG = C
 # default
-MAKEFILEPATH := /Applications/Xcode.app/Contents/Developer/Makefiles
+.LOADED := 
 # environment
-VSCODE_CODE_CACHE_PATH = /Users/tigpetro/Library/Application Support/Code/CachedData/af28b32d7e553898b2a91af498b1fb666fdebe0c
-# environment
-LOGNAME = tigpetro
-# environment
-APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
-# environment
-ZSH = /Users/tigpetro/.oh-my-zsh
-# environment
-VSCODE_HANDLES_UNCAUGHT_ERRORS = true
-# automatic
-^D = $(patsubst %/,%,$(dir $^))
-# environment
-XPC_FLAGS = 0x0
-# environment
-COLORTERM = truecolor
+TMP = C:\Users\Admin\AppData\Local\Temp
 # default
-MAKE = $(MAKE_COMMAND)
-# default
-MAKECMDGOALS := all
-# makefile (from `Makefile', line 11)
+.INCLUDE_DIRS := .
+# environment
+PROCESSOR_ARCHITEW6432 = AMD64
+# makefile
+MAKEFLAGS = pqrR
+# environment
+GOLAND_VM_OPTIONS = C:\Users\Admin\Downloads\JetBrains PyCharm Professional 2022.2.3\ja-netfilter-all\vmoptions\goland.vmoptions
+# environment
+ONEDRIVE = C:\Users\Admin\OneDrive
+# makefile
+CURDIR := c:/Users/Admin/Desktop/kali/CPP/C++ module 6/ex00
+# makefile (from 'Makefile', line 11)
 SRCS = $(wildcard $(SRCSPATH)*.cpp)
 # environment
-SHLVL = 2
-# makefile (from `Makefile', line 5)
-SKY = \033[1;36m
-# default
-MAKE_VERSION := 3.81
-# environment
-USER = tigpetro
-# makefile
-.DEFAULT_GOAL := all
-# environment
-TERM_SESSION_ID = w0t0p0:F2AB8475-8408-4C6E-AEBB-E00B68F601EF
-# makefile (from `Makefile', line 16)
-NAME = convert
-# environment
-LESS = -R
+VSCODE_L10N_BUNDLE_LOCATION = 
 # automatic
-%D = $(patsubst %/,%,$(dir $%))
-# default
-MAKE_COMMAND := /Applications/Xcode.app/Contents/Developer/usr/bin/make
+*D = $(patsubst %/,%,$(patsubst %\,%,$(dir $*)))
 # environment
-TERM_PROGRAM = iTerm.app
-# default
-.VARIABLES := 
+PROGRAMFILES = C:\Program Files (x86)
 # environment
-TMPDIR = /var/folders/zz/zyxvpxvq6csfxvn_n000cjk40034cj/T/
+JETBRAINSCLIENT_VM_OPTIONS = C:\Users\Admin\Downloads\JetBrai 
+ns PyCharm Professional 2022.2.3\ja-netfilter-all\vmoptions\jetbrainsclient.vmoptions
+# environment
+MFLAGS = -pqrR
+# default
+.SHELLFLAGS := -c
+# environment
+COMMONPROGRAMW6432 = C:\Program Files\Common Files
+# automatic
++D = $(patsubst %/,%,$(patsubst %\,%,$(dir $+)))
+# makefile (from 'Makefile', line 1)
+MAKEFILE_LIST := Makefile
+# automatic
+@F = $(notdir $@)
+# environment
+VSCODE_PID = 4952
+# automatic
+?D = $(patsubst %/,%,$(patsubst %\,%,$(dir $?)))
+# environment
+CLION_VM_OPTIONS = C:\Users\Admin\Downloads\JetBrains PyCharm Professional 2022.2.3\ja-netfilter-all\vmoptions\clion.vmoptions
 # automatic
 *F = $(notdir $*)
 # environment
-VSCODE_IPC_HOOK = /Users/tigpetro/Library/Application Support/Code/1.85-main.sock
-# environment
-MallocNanoZone = 0
-# makefile (from `Makefile', line 1)
-RED = \033[1;31m
-# makefile
-MAKEFLAGS = Rrqp
-# environment
-MFLAGS = -Rrqp
+APPCODE_VM_OPTIONS = C:\Users\Admin\Downloads\JetBrains PyCharm Professional 2022.2.3\ja-netfilter-all\vmoptions\appcode.vmoptions
 # automatic
-*D = $(patsubst %/,%,$(dir $*))
+<D = $(patsubst %/,%,$(patsubst %\,%,$(dir $<)))
+# makefile (from 'Makefile', line 8)
+SRCSPATH = ./
 # environment
-TERM_PROGRAM_VERSION = 3.2.5
+VSCODE_NLS_CONFIG = {"userLocale":"en-us","osLocale":"en-us","resolvedLanguage":"en","defaultMessagesFile":"C:\\Users\\Admin\\AppData\\Local\\Programs\\Microsoft VS Code\\resources\\app\\out\\nls.messages.json","locale":"en-us","availableLanguages":{}}
+# default
+MAKE_HOST := Windows32
+# makefile (from 'Makefile', line 12)
+OBJS = $(patsubst $(SRCSPATH)%.cpp, $(SRCSPATH)%.o, $(SRCS))
 # environment
-XPC_SERVICE_NAME = com.microsoft.VSCode.1904
+PROGRAMDATA = C:\ProgramData
+# default
+SHELL := sh.exe
+# environment
+HOMEPATH = \Users\Admin
+# default
+MAKECMDGOALS := all
+# environment
+DRIVERDATA = C:\Windows\System32\Drivers\DriverData
+# environment
+COMSPEC = C:\Windows\system32\cmd.exe
+# environment
+WINDIR = C:\Windows
+# environment
+PHPSTORM_VM_OPTIONS = C:\Users\Admin\Downloads\JetBrains PyCharm Professional 2022.2.3\ja-netfilter-all\vmoptions\phpstorm.vmoptions
+# environment
+RUBYMINE_VM_OPTIONS = C:\Users\Admin\Downloads\JetBrains PyCharm Professional 2022.2.3\ja-netfilter-all\vmoptions\rubymine.vmoptions
+# environment
+MAKELEVEL := 0
+# default
+MAKE = $(MAKE_COMMAND)
+# environment
+PATH = C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\nodejs\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\Git\cmd;C:\Program Files\dotnet\;C:\ProgramData\chocolatey\bin;C:\Program Files\Docker\Docker\resources\bin;C:\Users\Admin\AppData\Local\Programs\Python\Python311\Scripts\;C:\Users\Admin\AppData\Local\Programs\Python\Python311\;C:\Users\Admin\AppData\Local\Microsoft\WindowsApps;C:\Program Files\JetBrains\PyCharm 2022.2\bin;C:\Users\Admin\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Admin\AppData\Roaming\npm;C:\MinGW\bin;C:\Users\Admin\.dotnet\tools
+# environment
+ZES_ENABLE_SYSMAN = 1
+# environment
+COMPUTERNAME = DESKTOP-A83LH2U
+# default
+MAKEFILES := 
 # automatic
-+D = $(patsubst %/,%,$(dir $+))
-# makefile (from `Makefile', line 3)
+^F = $(notdir $^)
+# environment
+PYCHARM = C:\Program Files\JetBrains\PyCharm 2022.2\bin;
+# makefile (from 'Makefile', line 3)
 YELLOW = \033[1;33m
+# environment
+PROMPT = $P$G
+# environment
+CHOCOLATEYLASTPATHUPDATE = 133623206307070118
+# environment
+WEBIDE_VM_OPTIONS = C:\Users\Admin\Downloads\JetBrains PyCharm Professional 2022.2.3\ja-netfilter-all\vmoptions\webide.vmoptions
+# environment
+PYCHARM_VM_OPTIONS = C:\Users\Admin\Downloads\JetBrains PyCharm Professional 2022.2.3\ja-netfilter-all\vmoptions\pycharm.vmoptions
+# environment
+RIDER_VM_OPTIONS = C:\Users\Admin\Downloads\JetBrains PyCharm Professional 2022.2.3\ja-netfilter-all\vmoptions\rider.vmoptions
+# environment
+IDEA_VM_OPTIONS = C:\Users\Admin\Downloads\JetBrains PyCharm Professional 2022.2.3\ja-netfilter-all\vmoptions\idea.vmoptions
+# makefile (from 'Makefile', line 7)
+CPP = c++ -std=c++98
+# environment
+LOGONSERVER = \\DESKTOP-A83LH2U
+# environment
+USERNAME = Admin
+# makefile (from 'Makefile', line 2)
+GREEN = \033[1;32m
+# environment
+COMMONPROGRAMFILES = C:\Program Files (x86)\Common Files
+# automatic
+?F = $(notdir $?)
+# environment
+PROGRAMW6432 = C:\Program Files
+# makefile (from 'Makefile', line 16)
+NAME = convert
+# environment
+DATAGRIP_VM_OPTIONS = C:\Users\Admin\Downloads\JetBrains PyCharm Professional 2022.2.3\ja-netfilter-all\vmoptions\datagrip.vmoptions
+# environment
+PATHEXT = .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
+# environment
+WEBSTORM_VM_OPTIONS = C:\Users\Admin\Downloads\JetBrains PyCharm Professional 2022.2.3\ja-netfilter-all\vmoptions\webstorm.vmoptions
 # automatic
 +F = $(notdir $+)
 # environment
-ITERM_SESSION_ID = w0t0p0:F2AB8475-8408-4C6E-AEBB-E00B68F601EF
+ORIGINAL_XDG_CURRENT_DESKTOP = undefined
 # environment
-COLORFGBG = 7;0
+USERDOMAIN = DESKTOP-A83LH2U
+# 'override' directive
+GNUMAKEFLAGS := 
 # environment
-__CF_USER_TEXT_ENCODING = 0x19191:0:0
+OS = Windows_NT
 # environment
-COMMAND_MODE = unix2003
+DATASPELL_VM_OPTIONS = C:\Users\Admin\Downloads\JetBrains PyCharm Professional 2022.2.3\ja-netfilter-all\vmoptions\dataspell.vmoptions
+# makefile
+.DEFAULT_GOAL := all
+# makefile (from 'Makefile', line 1)
+RED = \033[1;31m
 # default
-MAKEFILES := 
-# makefile (from `Makefile', line 8)
-SRCSPATH = ./
-# automatic
-<F = $(notdir $<)
+MAKE_VERSION := 4.4.1
+# makefile (from 'Makefile', line 9)
+INCLPATH = ./
 # environment
-ITERM_PROFILE = Default
+PROGRAMFILES(X86) = C:\Program Files (x86)
 # environment
-PAGER = less
+USERDOMAIN_ROAMINGPROFILE = DESKTOP-A83LH2U
 # environment
-LC_ALL = C
-# makefile (from `Makefile', line 4)
+NUMBER_OF_PROCESSORS = 12
+# environment
+PUBLIC = C:\Users\Public
+# environment
+JETBRAINS_CLIENT_VM_OPTIONS = C:\Users\Admin\Downloads\JetBrains PyCharm Professional 2022.2.3\ja-netfilter-all\vmoptions\jetbrains_client.vmoptions
+# makefile (from 'Makefile', line 4)
 RESET = \033[0;37m
 # environment
-SECURITYSESSIONID = 186a7
+APPDATA = C:\Users\Admin\AppData\Roaming
+# makefile (from 'Makefile', line 14)
+CFLAGS = -Wall -Wextra -Werror $(foreach H, $(INCLPATH), -I$(H))
+# environment
+HOMEDRIVE = C:
+# makefile (from 'Makefile', line 5)
+SKY = \033[1;36m
+# environment
+PROCESSOR_ARCHITECTURE = x86
+# environment
+VSCODE_DOTNET_INSTALL_TOOL_ORIGINAL_ 
+HOME = undefined
+# environment
+COMMONPROGRAMFILES(X86) = C:\Program Files (x86)\Common Files
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# environment
+TEMP = C:\Users\Admin\AppData\Local\Temp
+# environment
+VSCODE_IPC_HOOK = \\.\pipe\6dad4cc6-1.95.3-main-sock
+# default
+.RECIPEPREFIX := 
 # automatic
-^F = $(notdir $^)
+<F = $(notdir $<)
 # default
 SUFFIXES := 
-# makefile (from `Makefile', line 9)
-INCLPATH = ./
+# environment
+ALLUSERSPROFILE = C:\ProgramData
+# environment
+VSCODE_CLI = 1
+# environment
+ELECTRON_NO_ATTACH_CONSOLE = 1
 # default
-.INCLUDE_DIRS = /usr/local/include
+.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell nocomment grouped-target extra-prereqs notintermediate shell-export archives jobserver output-sync load dospaths
 # environment
-MAKELEVEL := 0
+PROCESSOR_REVISION = 8d01
 # environment
-LANG = C
+GATEWAY_VM_OPTIONS = C:\Users\Admin\Downloads\JetBrains PyCharm Professional 2022.2.3\ja-netfilter-all\vmoptions\gateway.vmoptions
 # environment
-TERM = xterm-256color
+VSCODE_ESM_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
 # environment
-VSCODE_PID = 24136
+PROCESSOR_IDENTIFIER = Intel64 Family 6 Model 141 Stepping 1, GenuineIntel
 # variable set hash-table stats:
-# Load=85/1024=8%, Rehash=0, Collisions=4/118=3%
+# Load=125/1024=12%, Rehash=0, Collisions=12/170=7%
 
 # Pattern-specific Variable Values
 
@@ -192,89 +271,55 @@ VSCODE_PID = 24136
 
 # Directories
 
-# . (device 16777224, inode 1938930): 10 files, no impossibilities.
+# . (key c:/Users/Admin/Desktop/kali/CPP/C++ module 6/ex00, mtime 1732650385): 8 files, no impossibilities.
 
-# 10 files, no impossibilities in 1 directories.
+# 8 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
-%.o: ./%.cpp
-#  commands to execute (from `Makefile', line 25):
+%.o: %.cpp
+#  recipe to execute (from 'Makefile', line 25):
 	@$(CPP) $(CFLAGS) -c $< -o $@
 	@echo "$(YELLOW) Object files have been created $(RESET)"
-	
 
 # 1 implicit rules, 0 (0.0%) terminal.
-
 # Files
 
-all: convert
-#  Phony target (prerequisite of .PHONY).
-#  Command-line target.
+# Not a target:
+ScalarConverter.cpp:
+#  Implicit rule search has been done.
+#  File is secondary (prerequisite of .SECONDARY).
+#  Last modified 2024-11-26 23:37:58
+#  File has been updated.
+#  Successfully updated.
+
+convert: ScalarConverter.o main.o
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has been updated.
-#  Successfully updated.
+#  Needs to be updated (-q is set).
 # variable set hash-table stats:
-# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
-
-.PHONY: all clean fclean re
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-ScalarConverter.o: ScalarConverter.cpp
-#  Implicit rule search has been done.
-#  Implicit/static pattern stem: `ScalarConverter'
-#  Last modified 2024-11-22 21:33:50
-#  File has been updated.
-#  Successfully updated.
-# variable set hash-table stats:
-# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
-#  commands to execute (from `Makefile', line 25):
-	@$(CPP) $(CFLAGS) -c $< -o $@
-	@echo "$(YELLOW) Object files have been created $(RESET)"
-	
-
-# Not a target:
-.SUFFIXES:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+# Load=0/32=0%, Rehash=0, Collisions=0/8=0%
+#  recipe to execute (from 'Makefile', line 21):
+	@$(CPP) $^ -o $@
+	@echo "$(GREEN) Executable file has been created $(RESET)"
 
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2024-11-19 20:58:29
+#  File is secondary (prerequisite of .SECONDARY).
+#  Last modified 2024-11-26 23:46:30
 #  File has been updated.
 #  Successfully updated.
-# variable set hash-table stats:
-# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
-# Not a target:
-main.cpp:
-#  Implicit rule search has been done.
-#  Last modified 2024-11-19 20:59:05
-#  File has been updated.
-#  Successfully updated.
-# variable set hash-table stats:
-# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
-
-fclean: clean
+clean:
 #  Phony target (prerequisite of .PHONY).
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has not been updated.
-#  commands to execute (from `Makefile', line 33):
-	@rm -f $(NAME)
-	@echo "$(RED) Executable file has been deleted $(RESET)"
-	
-
-# Not a target:
-.DEFAULT:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 29):
+	@rm -f $(OBJS)
+	@echo "$(RED) Object files have been deleted $(RESET)"
 
 re: fclean all
 #  Phony target (prerequisite of .PHONY).
@@ -282,63 +327,85 @@ re: fclean all
 #  File does not exist.
 #  File has not been updated.
 
-clean:
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+all: convert
+#  Phony target (prerequisite of .PHONY).
+#  Command line target.
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/8=0%
+
+fclean: clean
 #  Phony target (prerequisite of .PHONY).
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has not been updated.
-#  commands to execute (from `Makefile', line 29):
-	@rm -f $(OBJS)
-	@echo "$(RED) Object files have been deleted $(RESET)"
-	
+#  recipe to execute (from 'Makefile', line 33):
+	@rm -f $(NAME)
+	@echo "$(RED) Executable file has been deleted $(RESET)"
 
 # Not a target:
-ScalarConverter.cpp:
-#  Implicit rule search has been done.
-#  Last modified 2024-11-22 21:33:47
-#  File has been updated.
-#  Successfully updated.
-# variable set hash-table stats:
-# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+main.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
 
-main.o: main.cpp
+ScalarConverter.o: ScalarConverter.cpp
 #  Implicit rule search has been done.
-#  Implicit/static pattern stem: `main'
-#  Last modified 2024-11-22 19:30:12
+#  Implicit/static pattern stem: 'ScalarConverter'
+#  File does not exist.
 #  File has been updated.
-#  Successfully updated.
+#  Needs to be updated (-q is set).
+# automatic
+# @ := ScalarConverter.o
+# automatic
+# * := ScalarConverter
+# automatic
+# < := ScalarConverter.cpp
+# automatic
+# + := ScalarConverter.cpp
+# automatic
+# % := 
+# automatic
+# ^ := ScalarConverter.cpp
+# automatic
+# ? := ScalarConverter.cpp
+# automatic
+# | := 
 # variable set hash-table stats:
-# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
-#  commands to execute (from `Makefile', line 25):
+# Load=8/32=25%, Rehash=0, Collisions=2/18=11%
+#  recipe to execute (from 'Makefile', line 25):
 	@$(CPP) $(CFLAGS) -c $< -o $@
 	@echo "$(YELLOW) Object files have been created $(RESET)"
-	
 
-convert: ScalarConverter.o main.o
+.PHONY: all clean fclean re
 #  Implicit rule search has not been done.
-#  Last modified 2024-11-22 21:33:50
-#  File has been updated.
-#  Successfully updated.
-# variable set hash-table stats:
-# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
-#  commands to execute (from `Makefile', line 21):
-	@$(CPP) $^ -o $@
-	@echo "$(GREEN) Executable file has been created $(RESET)"
-	
+#  Modification time never checked.
+#  File has not been updated.
 
 # files hash-table stats:
-# Load=13/1024=1%, Rehash=0, Collisions=0/42=0%
+# Load=12/1024=1%, Rehash=0, Collisions=0/38=0%
 # VPATH Search Paths
 
-# No `vpath' search paths.
+# No 'vpath' search paths.
 
-# No general (`VPATH' variable) search path.
+# No general (' 
+VPATH' variable) search path.
 
-# # of strings in strcache: 1
-# # of strcache buffers: 1
-# strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
-# strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
+# strcache buffers: 1 (0) / strings = 20 / storage = 176 B / avg = 8 B
+# current buf: size = 8174 B / used = 176 B / count = 20 / avg = 8 B
 
-# Finished Make data base on Sat Nov 23 21:36:15 2024
+# strcache performance: lookups = 42 / hit rate = 52%
+# hash-table stats:
+# Load=20/8192=0%, Rehash=0, Collisions=0/42=0%
+# Finished Make data base on Tue Nov 26 23:46:38 2024
 
  

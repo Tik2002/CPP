@@ -33,17 +33,20 @@ static bool MyIsDigit(char c)
 
 static bool checkForHardCode(const string& source)
 {
-	unsigned int i = 0;
-
-	for (; i < source.length() && MyIsDigit(source[i]); i++);
-	if (i >= source.length() || source[i] != '.')
-		return (true);
-	else
-		++i;
-	for (; i < source.length(); i++)
-		if (!MyIsDigit(source[i]))
-			return (true);
-	return (false);
+	bool flag = true;
+	for (unsigned int i = 0; i < source.length() ; i++)
+	{
+		if (MyIsDigit(source[i]))
+			continue;
+		else
+		{
+			if (source[i] == '.' && flag && i + 1 < source.length())
+				flag = false;
+			else if (source[i - 1] == '.')
+				return true;
+		}
+	}
+	return flag;
 }
 
 void ScalarConverter::printFloat(const string& source)
@@ -65,14 +68,14 @@ static void printInf(const string& source)
 {
 	cout << "Char: " << "impossible\n";
 	cout << "Int: " << "impossible\n";
-	cout << "Float: " << (source[0] == '+' ? "+" : "-") << "inff\n";
-	cout << "Double: " << (source[0] == '+' ? "+" : "-") << "inf\n";
+	cout << "Float: " << (source[0] == '-' ? "-" : "+") << "inff\n";
+	cout << "Double: " << (source[0] == '-' ? "-" : "+") << "inf\n";
 
 }
 
 static bool checkInf(const string& toCheck)
 {
-	return (toCheck == "+inf" || toCheck == "+inff" || toCheck == "-inf" || toCheck == "-inff");
+	return (toCheck == "inf" || toCheck == "+inf" || toCheck == "inff" || toCheck == "+inff" || toCheck == "-inf" || toCheck == "-inff");
 }
 
 static void printNans()
