@@ -6,7 +6,7 @@ make.exe all --print-data-base --no-builtin-variables --no-builtin-rules --quest
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Tue Nov 26 23:46:38 2024
+# Make data base, printed on Wed Nov 27 01:11:55 2024
 
 # Variables
 
@@ -49,7 +49,8 @@ VSCODE_HANDLES_UNCAUGHT_ERRORS = true
 # automatic
 %D = $(patsubst %/,%,$(patsubst %\,%,$(dir $%)))
 # environment
-IGCCSVC_DB = AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA//ET5yI6JU+4QD3ZHGzy5gQAAAACAAAAAAAQZgAAAAEAACAAAACNtdBmnsfM9lLQQA3V9nkdqkQxVlVJvr4M8FTGUI1J+wAAAAAOgAAAAAIAACAAAAAEodHRNwTocJjvX8am2Jr3adXKjunPcntqocmijGHmLWAAAACy1uycuNlEclGN1168K4e4cparT3E/RYPw8kEiTP+WGcUb/6D/5j2dvEp4rzDSPxq2wttTInPmxQaGoCXWkwJ8N9YSyMwXTgEK3iuvz/kYXikPTCm/XB4lDLDOrd+W/jRAAAAAvPflXj+DX8BgixGzTZ3/Bx+MXkYV6fpRgwVuSk+fgr8aD0edJFmynxins35M55oLjdNYLTKd1aoMGHPfOyeqbw==
+IGCCSVC_DB = AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA//ET5yI6JU+4QD3ZHGzy5gQAAAACAAAAAAAQZgAAAAEAACAAAACNtdBmnsfM9lLQQA3V9nkdqkQxVlVJvr4M8FTGUI1J+wAAAAAOgAAAAAIAACAAAAAEodHRNwTocJjvX8am2Jr3adXKjunPcntqocmijGHmLWAAAACy1uycuNlEclGN1168K4e4cparT3E/RYPw8kEiTP+WGcUb/6D/5j2dvEp4rzDSPxq2wttTInPmxQaGoCXWkwJ8N9YSyMwXTgEK3iuvz/kYXikPTCm/XB4lDLDOrd+W/jRAAAAAvPflXj+DX8BgixGzTZ3/Bx+MXkYV6fpRgwVuSk+fgr8aD0edJFmynx 
+ins35M55oLjdNYLTKd1aoMGHPfOyeqbw==
 # automatic
 ^D = $(patsubst %/,%,$(patsubst %\,%,$(dir $^)))
 # automatic
@@ -83,8 +84,7 @@ VSCODE_L10N_BUNDLE_LOCATION =
 # environment
 PROGRAMFILES = C:\Program Files (x86)
 # environment
-JETBRAINSCLIENT_VM_OPTIONS = C:\Users\Admin\Downloads\JetBrai 
-ns PyCharm Professional 2022.2.3\ja-netfilter-all\vmoptions\jetbrainsclient.vmoptions
+JETBRAINSCLIENT_VM_OPTIONS = C:\Users\Admin\Downloads\JetBrains PyCharm Professional 2022.2.3\ja-netfilter-all\vmoptions\jetbrainsclient.vmoptions
 # environment
 MFLAGS = -pqrR
 # default
@@ -230,9 +230,6 @@ SKY = \033[1;36m
 # environment
 PROCESSOR_ARCHITECTURE = x86
 # environment
-VSCODE_DOTNET_INSTALL_TOOL_ORIGINAL_ 
-HOME = undefined
-# environment
 COMMONPROGRAMFILES(X86) = C:\Program Files (x86)\Common Files
 # environment
 ELECTRON_RUN_AS_NODE = 1
@@ -263,7 +260,8 @@ VSCODE_ESM_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
 # environment
 PROCESSOR_IDENTIFIER = Intel64 Family 6 Model 141 Stepping 1, GenuineIntel
 # variable set hash-table stats:
-# Load=125/1024=12%, Rehash=0, Collisions=12/170=7%
+# Load=124/1024=12%, Rehash 
+=0, Collisions=12/161=7%
 
 # Pattern-specific Variable Values
 
@@ -271,9 +269,9 @@ PROCESSOR_IDENTIFIER = Intel64 Family 6 Model 141 Stepping 1, GenuineIntel
 
 # Directories
 
-# . (key c:/Users/Admin/Desktop/kali/CPP/C++ module 6/ex00, mtime 1732650385): 8 files, no impossibilities.
+# . (key c:/Users/Admin/Desktop/kali/CPP/C++ module 6/ex00, mtime 1732654869): 10 files, no impossibilities.
 
-# 8 files, no impossibilities in 1 directories.
+# 10 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -289,17 +287,16 @@ PROCESSOR_IDENTIFIER = Intel64 Family 6 Model 141 Stepping 1, GenuineIntel
 ScalarConverter.cpp:
 #  Implicit rule search has been done.
 #  File is secondary (prerequisite of .SECONDARY).
-#  Last modified 2024-11-26 23:37:58
+#  Last modified 2024-11-27 01:01:08
 #  File has been updated.
 #  Successfully updated.
 
 convert: ScalarConverter.o main.o
 #  Implicit rule search has not been done.
-#  File does not exist.
+#  File is secondary (prerequisite of .SECONDARY).
+#  Last modified 2024-11-27 01:01:09
 #  File has been updated.
-#  Needs to be updated (-q is set).
-# variable set hash-table stats:
-# Load=0/32=0%, Rehash=0, Collisions=0/8=0%
+#  Successfully updated.
 #  recipe to execute (from 'Makefile', line 21):
 	@$(CPP) $^ -o $@
 	@echo "$(GREEN) Executable file has been created $(RESET)"
@@ -339,9 +336,7 @@ all: convert
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has been updated.
-#  Needs to be updated (-q is set).
-# variable set hash-table stats:
-# Load=0/32=0%, Rehash=0, Collisions=0/8=0%
+#  Successfully updated.
 
 fclean: clean
 #  Phony target (prerequisite of .PHONY).
@@ -353,35 +348,31 @@ fclean: clean
 	@echo "$(RED) Executable file has been deleted $(RESET)"
 
 # Not a target:
-main.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+main.cpp:
+#  Implicit rule search has been done.
+#  File is secondary (prerequisite of .SECONDARY).
+#  Last modified 2024-11-26 23:37:58
+#  File has been updated.
+#  Successfully updated.
+
+main.o: main.cpp
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'main'
+#  File is secondary (prerequisite of .SECONDARY).
+#  Last modified 2024-11-27 00:15:43
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 25):
+	@$(CPP) $(CFLAGS) -c $< -o $@
+	@echo "$(YELLOW) Object files have been created $(RESET)"
 
 ScalarConverter.o: ScalarConverter.cpp
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'ScalarConverter'
-#  File does not exist.
+#  File is secondary (prerequisite of .SECONDARY).
+#  Last modified 2024-11-27 01:01:09
 #  File has been updated.
-#  Needs to be updated (-q is set).
-# automatic
-# @ := ScalarConverter.o
-# automatic
-# * := ScalarConverter
-# automatic
-# < := ScalarConverter.cpp
-# automatic
-# + := ScalarConverter.cpp
-# automatic
-# % := 
-# automatic
-# ^ := ScalarConverter.cpp
-# automatic
-# ? := ScalarConverter.cpp
-# automatic
-# | := 
-# variable set hash-table stats:
-# Load=8/32=25%, Rehash=0, Collisions=2/18=11%
+#  Successfully updated.
 #  recipe to execute (from 'Makefile', line 25):
 	@$(CPP) $(CFLAGS) -c $< -o $@
 	@echo "$(YELLOW) Object files have been created $(RESET)"
@@ -392,20 +383,19 @@ ScalarConverter.o: ScalarConverter.cpp
 #  File has not been updated.
 
 # files hash-table stats:
-# Load=12/1024=1%, Rehash=0, Collisions=0/38=0%
+# Load=13/1024=1%, Rehash=0, Collisions=0/42=0%
 # VPATH Search Paths
 
 # No 'vpath' search paths.
 
-# No general (' 
-VPATH' variable) search path.
+# No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 20 / storage = 176 B / avg = 8 B
-# current buf: size = 8174 B / used = 176 B / count = 20 / avg = 8 B
+# strcache buffers: 1 (0) / strings = 21 / storage = 181 B / avg = 8 B
+# current buf: size = 8174 B / used = 181 B / count = 21 / avg = 8 B
 
-# strcache performance: lookups = 42 / hit rate = 52%
+# strcache performance: lookups = 47 / hit rate = 55%
 # hash-table stats:
-# Load=20/8192=0%, Rehash=0, Collisions=0/42=0%
-# Finished Make data base on Tue Nov 26 23:46:38 2024
+# Load=21/8192=0%, Rehash=0, Collisions=0/47=0%
+# Finished Make data base on Wed Nov 27 01:11:55 2024
 
  

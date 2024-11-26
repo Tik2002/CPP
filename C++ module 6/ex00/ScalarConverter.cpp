@@ -33,35 +33,44 @@ static bool MyIsDigit(char c)
 
 static bool checkForHardCode(const string& source)
 {
-	bool flag = true;
-	for (unsigned int i = 0; i < source.length() ; i++)
+	unsigned int i = 0;
+	unsigned int len = source.length();
+	for (; i < len && MyIsDigit(source[i]); i++);
+
+	if (i < len && source[i] == '.')
+		i++;
+
+	if (!MyIsDigit(source[i]))
+		return true;
+
+	bool allZero = true;
+	for (; i < len ; i++)
 	{
 		if (MyIsDigit(source[i]))
-			continue;
-		else
 		{
-			if (source[i] == '.' && flag && i + 1 < source.length())
-				flag = false;
-			else if (source[i - 1] == '.')
-				return true;
+			if (allZero == true && source[i] != '0')
+				allZero = false;
+			continue;
 		}
+		else
+			return false || allZero;
 	}
-	return flag;
+	return false || allZero;
 }
 
-void ScalarConverter::printFloat(const string& source)
+void ScalarConverter::printFloat(const string& source, bool mod)
 {
 	char *EOL;
 
-	cout << "Float: " << std::strtof(source.c_str(), &EOL) << (checkForHardCode(source) ? ".0f\n" : "f\n");
+	cout << "Float: " << std::strtof(source.c_str(), &EOL) << (mod ? ".0f\n" : "f\n");
 
 }
 
-void ScalarConverter::printDouble(const string& source)
+void ScalarConverter::printDouble(const string& source, bool mod)
 {
 	char *EOL;
 
-	cout << "Double: " << std::strtof(source.c_str(), &EOL) << (checkForHardCode(source) ? ".0\n" : "\n");
+	cout << "Double: " << std::strtof(source.c_str(), &EOL) << (mod ? ".0\n" : "\n");
 }
 
 static void printInf(const string& source)
@@ -101,8 +110,9 @@ void ScalarConverter::convert(const string& source)
 	{
 		printChar(source);
 		printInt(source);
-		printFloat(source);
-		printDouble(source);
+		bool mod = checkForHardCode(source);
+		printFloat(source, mod);
+		printDouble(source, mod);
 	}
 }
 

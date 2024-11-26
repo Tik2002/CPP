@@ -23,8 +23,8 @@ private:
 	~ScalarConverter();
 	static void printChar(const string& source);
 	static void printInt(const string& source);
-	static void printFloat(const string& source);
-	static void printDouble(const string& source);
+	static void printFloat(const string& source, bool mod);
+	static void printDouble(const string& source, bool mod);
 };
 
 // ostream& operator<<(ostream& os, const ScalarConverter& obj);
