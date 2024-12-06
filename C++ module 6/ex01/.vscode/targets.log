@@ -8,7 +8,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This program built for i386-apple-darwin11.3.0
  
 
-# Make data base, printed on Tue Dec  3 15:57:13 2024
+# Make data base, printed on Tue Dec  3 16:00:14 2024
 
 # Variables
 
@@ -25,7 +25,7 @@ VSCODE_CRASH_REPORTER_PROCESS_TYPE = extensionHost
 # automatic
 @F = $(notdir $@)
 # makefile
-CURDIR := /Users/tigpetro/Desktop/42cursus/CPP/C++ module 6/ex00
+CURDIR := /Users/tigpetro/Desktop/42cursus/CPP/C++ module 6/ex01
 # makefile
 SHELL = /bin/sh
 # environment
@@ -59,7 +59,7 @@ SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.ya5kOLYaul/Listeners
 # automatic
 %F = $(notdir $%)
 # environment
-PWD = /Users/tigpetro/Desktop/42cursus/CPP/C++ module 6/ex00
+PWD = /Users/tigpetro/Desktop/42cursus/CPP/C++ module 6/ex01
 # environment
 ORIGINAL_XDG_CURRENT_DESKTOP = undefined
 # makefile (from `Makefile', line 2)
@@ -105,7 +105,7 @@ USER = tigpetro
 # environment
 TERM_SESSION_ID = w0t0p0:F2AB8475-8408-4C6E-AEBB-E00B68F601EF
 # makefile (from `Makefile', line 16)
-NAME = convert
+NAME = serializer
 # environment
 LESS = -R
 # automatic
@@ -178,8 +178,9 @@ LANG = C
 TERM = xterm-256color
 # environment
 VSCODE_PID = 3218
+ 
 # variable set hash-table stats:
-# Load=83/1024=8%, Rehash=0, Collisions=4/116=3%
+# Load=83/1024=8%, Rehash=0, Collisions=4/123=3%
 
 # Pattern-specific Variable Values
 
@@ -187,9 +188,9 @@ VSCODE_PID = 3218
 
 # Directories
 
-# . (device 16777224, inode 1938930): 10 files, no impossibilities.
+# . (device 16777224, inode 1981523): 7 files, no impossibilities.
 
-# 10 files, no impossibilities in 1 directories.
+# 7 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -203,15 +204,15 @@ VSCODE_PID = 3218
 
 # Files
 
-all: convert
+all: serializer
 #  Phony target (prerequisite of .PHONY).
 #  Command-line target.
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has been updated.
-#  Successfully updated.
+#  Needs to be updated (-q is set).
 # variable set hash-table stats:
-# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+# Load=0/32=0%, Rehash=0, Collisions=0/7=0%
 
 .PHONY: all clean fclean re
 #  Implicit rule search has not been done.
@@ -221,11 +222,27 @@ all: convert
 ScalarConverter.o: ScalarConverter.cpp
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: `ScalarConverter'
-#  Last modified 2024-12-03 15:40:52
+#  File does not exist.
 #  File has been updated.
-#  Successfully updated.
+#  Needs to be updated (-q is set).
+# automatic
+# @ := ScalarConverter.o
+# automatic
+# % := 
+# automatic
+# * := ScalarConverter
+# automatic
+# + := ScalarConverter.cpp
+# automatic
+# | := 
+# automatic
+# < := ScalarConverter.cpp
+# automatic
+# ^ := ScalarConverter.cpp
+# automatic
+# ? := ScalarConverter.cpp
 # variable set hash-table stats:
-# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+# Load=8/32=25%, Rehash=0, Collisions=1/17=6%
 #  commands to execute (from `Makefile', line 25):
 	@$(CPP) $(CFLAGS) -c $< -o $@
 	@echo "$(YELLOW) Object files have been created $(RESET)"
@@ -240,16 +257,7 @@ ScalarConverter.o: ScalarConverter.cpp
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2024-11-19 20:58:29
-#  File has been updated.
-#  Successfully updated.
-# variable set hash-table stats:
-# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
-
-# Not a target:
-main.cpp:
-#  Implicit rule search has been done.
-#  Last modified 2024-11-19 20:59:05
+#  Last modified 2024-12-03 16:00:11
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -263,6 +271,18 @@ fclean: clean
 #  commands to execute (from `Makefile', line 33):
 	@rm -f $(NAME)
 	@echo "$(RED) Executable file has been deleted $(RESET)"
+	
+
+serializer: ScalarConverter.o main.o
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/7=0%
+#  commands to execute (from `Makefile', line 21):
+	@$(CPP) $^ -o $@
+	@echo "$(GREEN) Executable file has been created $(RESET)"
 	
 
 # Not a target:
@@ -290,40 +310,20 @@ clean:
 # Not a target:
 ScalarConverter.cpp:
 #  Implicit rule search has been done.
-#  Last modified 2024-12-03 15:40:40
+#  Last modified 2024-12-03 15:59:40
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
-main.o: main.cpp
-#  Implicit rule search has been done.
-#  Implicit/static pattern stem: `main'
-#  Last modified 2024-12-03 15:40:52
-#  File has been updated.
-#  Successfully updated.
-# variable set hash-table stats:
-# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
-#  commands to execute (from `Makefile', line 25):
-	@$(CPP) $(CFLAGS) -c $< -o $@
-	@echo "$(YELLOW) Object files have been created $(RESET)"
-	
-
-convert: ScalarConverter.o main.o
+# Not a target:
+main.o:
 #  Implicit rule search has not been done.
-#  Last modified 2024-12-03 15:40:52
-#  File has been updated.
-#  Successfully updated.
-# variable set hash-table stats:
-# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
-#  commands to execute (from `Makefile', line 21):
-	@$(CPP) $^ -o $@
- 
-	@echo "$(GREEN) Executable file has been created $(RESET)"
-	
+#  Modification time never checked.
+#  File has not been updated.
 
 # files hash-table stats:
-# Load=13/1024=1%, Rehash=0, Collisions=0/42=0%
+# Load=12/1024=1%, Rehash=0, Collisions=0/38=0%
 # VPATH Search Paths
 
 # No `vpath' search paths.
@@ -335,6 +335,6 @@ convert: ScalarConverter.o main.o
 # strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
 # strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
 
-# Finished Make data base on Tue Dec  3 15:57:13 2024
+# Finished Make data base on Tue Dec  3 16:00:14 2024
 
  
