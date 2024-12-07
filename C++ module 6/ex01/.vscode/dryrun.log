@@ -1,11 +1,11 @@
-make --dry-run --keep-going --print-directory
-make: Entering directory `/Users/tigpetro/Desktop/42cursus/CPP/C++ module 6/ex01'
-c++ -std=c++98 -Wall -Wextra -Werror  -I./ -c ScalarConverter.cpp -o ScalarConverter.o
+make.exe --dry-run --keep-going --print-directory
+make: Entering directory 'c:/Users/Admin/Desktop/kali/CPP/C++ module 6/ex01'
+c++ -std=c++11 -Wall -Wextra -Werror  -I./ -c Serializer.cpp -o Serializer.o
 echo "\033[1;33m Object files have been created \033[0;37m"
-c++ -std=c++98 -Wall -Wextra -Werror  -I./ -c main.cpp -o main.o
-echo "\033[1;33m Object files have been created \033[0;37m"
-c++ -std=c++98 ScalarConverter.o main.o -o serializer
-echo "\033[1;32m Executable file has been created \033[0;37m"
  
-make: Leaving directory `/Users/tigpetro/Desktop/42cursus/CPP/C++ module 6/ex01'
+c++ -std=c++11 -Wall -Wextra -Werror  -I./ -c main.cpp -o main.o
+echo "\033[1;33m Object files have been created \033[0;37m"
+c++ -std=c++11 Data.o Serializer.o main.o -o serializer
+echo "\033[1;32m Executable file has been created \033[0;37m"
+make: Leaving directory 'c:/Users/Admin/Desktop/kali/CPP/C++ module 6/ex01'
  
