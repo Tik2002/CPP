@@ -25,8 +25,8 @@ public:
         char const *what() const throw() {return "Out of range";};
     };
 private:
-    unsigned int _size;
     T* _arr;
+    unsigned int _size;
 };
 
 #include <Array.tpp>

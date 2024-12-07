@@ -8,7 +8,7 @@ template <typename T>
 Array<T>::Array(const unsigned int n) : _size(n) {_arr = new T[_size];}
 
 template <typename T>
-Array<T>::Array(const Array<T>& other){*this = other;}
+Array<T>::Array(const Array<T>& other) : _arr(nullptr), _size(0) {*this = other;}
 
 template <typename T>
 Array<T>& Array<T>::operator=(const Array<T>& other)

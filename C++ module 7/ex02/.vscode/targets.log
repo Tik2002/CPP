@@ -6,7 +6,7 @@ make.exe all --print-data-base --no-builtin-variables --no-builtin-rules --quest
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Sun Dec 08 00:24:21 2024
+# Make data base, printed on Sun Dec 08 00:40:58 2024
 
 # Variables
 
@@ -279,7 +279,7 @@ PROCESSOR_IDENTIFIER = Intel64 Family 6 Model 141 Stepping 1, GenuineIntel
 
 # Directories
 
-# . (key c:/Users/Admin/Desktop/kali/CPP/C++ module 7/ex02, mtime 1733603042): 9 files, no impossibilities.
+# . (key c:/Users/Admin/Desktop/kali/CPP/C++ module 7/ex02, mtime 1733604049): 9 files, no impossibilities.
 
 # 9 files, no impossibilities in 1 directories.
 
@@ -297,7 +297,7 @@ PROCESSOR_IDENTIFIER = Intel64 Family 6 Model 141 Stepping 1, GenuineIntel
 Makefile:
 #  Implicit rule search has been done.
 #  File is secondary (prerequisite of .SECONDARY).
-#  Last modified 2024-12-08 00:23:59
+#  Last modified 2024-12-08 00:40:45
 #  File has been updated.
 #  Successfully updated.
 
@@ -343,7 +343,7 @@ fclean: clean
 main.cpp:
 #  Implicit rule search has been done.
 #  File is secondary (prerequisite of .SECONDARY).
-#  Last modified 2024-12-07 23:18:06
+#  Last modified 2024-12-08 00:40:35
 #  File has been updated.
 #  Successfully updated.
 
@@ -351,7 +351,7 @@ main.o: main.cpp
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'main'
 #  File is secondary (prerequisite of .SECONDARY).
-#  Last modified 2024-12-08 00:24:02
+#  Last modified 2024-12-08 00:40:49
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from 'Makefile', line 25):
@@ -361,7 +361,7 @@ main.o: main.cpp
 iter: main.o
 #  Implicit rule search has not been done.
 #  File is secondary (prerequisite of .SECONDARY).
-#  Last modified 2024-12-08 00:24:02
+#  Last modified 2024-12-08 00:40:49
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from 'Makefile', line 21):
@@ -387,6 +387,7 @@ iter: main.o
 # strcache performance: lookups = 42 / hit rate = 54%
 # hash-table stats:
 # Load=19/8192=0%, Rehash=0, Collisions=0/42=0%
-# Finished Make data base on Sun Dec 08 00:24:21 2024
+# Finished Make data base on Sun Dec 08 00:40: 
+58 2024
 
  
