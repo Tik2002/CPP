@@ -35,21 +35,21 @@ void identify(Base& p)
 {
     try
     {
-        dynamic_cast<A&>(p);
+        (void)dynamic_cast<A&>(p);
         cout << "Reference  " << " A" << endl;
         return;
     }
     catch(...){}
     try
     {
-        dynamic_cast<B&>(p);
+        (void)dynamic_cast<B&>(p);
         cout << "Reference  " << " B" << endl;
         return;
     }
     catch(...){}
     try
     {
-        dynamic_cast<C&>(p);
+        (void)dynamic_cast<C&>(p);
         cout << "Reference  " << " C" << endl;
         return;
     }
