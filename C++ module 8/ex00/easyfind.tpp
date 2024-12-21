@@ -1,7 +1,7 @@
 #include <easyfind.hpp>
 
 template <typename T>
-const T::iterator easyfind(const T& src, int i)
+typename T::const_iterator easyfind(const T& container, int i)
 {
-
+	return (std::find(container.begin(), container.end(), i));
 }

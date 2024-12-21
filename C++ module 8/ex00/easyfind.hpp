@@ -1,6 +1,7 @@
 #pragma once
 
 #include <iostream>
+#include <vector>
 #include <algorithm>
 using std::string;
 using std::cout;
@@ -9,6 +10,6 @@ using std::clog;
 using std::endl;
 
 template <typename T>
-const T::iterator easyfind(const T& src, int i);
+typename T::const_iterator easyfind(const T& container, int i);
 
 #include <easyfind.tpp>
