@@ -70,7 +70,6 @@
 		"deque": "cpp",
 		"memory_resource": "cpp",
 		"numeric": "cpp",
-		"random": "cpp",
-		"*.tpp": "cpp"
+		"random": "cpp"
 	}
 }
