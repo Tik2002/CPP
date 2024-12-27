@@ -23,7 +23,7 @@ void	Contact::_check_phone_number(string &src)
 	}
 }
 
-void	Contact::_set_strings(string &dest, string str)
+void	Contact::_set_strings(string &dest, const string str)
 {
 	dest.clear();
 	cout << str << endl;

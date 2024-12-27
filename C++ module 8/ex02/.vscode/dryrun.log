@@ -1,4 +1,4 @@
-make --dry-run --keep-going --print-directory
+make --dry-run --always-make --keep-going --print-directory
 make: Entering directory `/Users/tigpetro/Desktop/42cursus/CPP/C++ module 8/ex02'
 c++ -std=c++98 -Wall -Wextra -Werror  -I./ -c main.cpp -o main.o
 echo "\033[1;33m Object files have been created \033[0;37m"

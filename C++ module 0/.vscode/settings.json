@@ -1,3 +1,18 @@
 {
-	"makefile.extensionOutputFolder": "./.vscode"
+	"makefile.extensionOutputFolder": "./.vscode",
+	"files.associations": {
+		"string": "cpp",
+		"iosfwd": "cpp",
+		"__node_handle": "cpp",
+		"__split_buffer": "cpp",
+		"array": "cpp",
+		"iterator": "cpp",
+		"string_view": "cpp",
+		"unordered_map": "cpp",
+		"vector": "cpp",
+		"algorithm": "cpp",
+		"__bit_reference": "cpp",
+		"__hash_table": "cpp",
+		"initializer_list": "cpp"
+	}
 }

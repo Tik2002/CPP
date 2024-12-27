@@ -142,6 +142,5 @@ int main( void )
 		++lit;
 	}
 	cout << endl;
-	return (0);
 	return 0;
 }
