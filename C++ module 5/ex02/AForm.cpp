@@ -1,5 +1,11 @@
 #include <AForm.hpp>
 
+const char* AForm::FormNotSigned::what() const throw() {return "Form doesn't signed";}
+
+const char* AForm::GradeTooHighException::what() const throw() {return "Highest possible grade is 1";}
+
+const char* AForm::GradeTooLowException::what() const throw() {return "Lowest possible grade is 150";}
+
 static void	validate(const int grade)
 {
 	if (grade < 1)
@@ -16,10 +22,13 @@ AForm::AForm(const AForm& other) : sign_grade(150), execute_grade(150) {*this = 
 
 AForm &AForm::operator=(const AForm& other)
 {
-	const_cast<string&>(this->name) = other.name;
-	this->is_signed = other.is_signed;
-	const_cast<int&>(this->sign_grade) = other.sign_grade;
-	const_cast<int&>(this->execute_grade) = other.execute_grade;
+	if (this != &other)
+	{
+		const_cast<string&>(this->name) = other.name;
+		this->is_signed = other.is_signed;
+		const_cast<int&>(this->sign_grade) = other.sign_grade;
+		const_cast<int&>(this->execute_grade) = other.execute_grade;
+	}
 	return (*this);
 }
 

@@ -2,21 +2,42 @@
 
 int main()
 {
-	try
 	{
-		Bureaucrat ob("APO", 10);
-		Bureaucrat ob3("DOG", 13);
-		cout << ob << endl;
-		Bureaucrat ob2("ChLP", 25);
-		Form form1("B23", 24, 25);
-		cout << form1 << endl;
-		ob.signForm(form1);
-		ob3.signForm(form1);
+		Bureaucrat	meta("Seda", 25);
+		Form		form("form", 25 , 75);
+
+		try
+		{
+			meta.signForm(form);
+			cout << form << endl;
+		}
+		catch(const exception& e)
+		{
+			clog << e.what() << '\n';
+		}
+
 	}
-	catch(const std::exception& e)
+
 	{
-		std::cerr << e.what() << '\n';
+		try {
+			Form	alpha("form 1", 0 , 75);
+		}
+		catch(const exception& e) {
+			clog << e.what() << '\n';
+		}
+
+		try {
+			Form	alpha("form 2", 75 , 155);
+		}
+		catch(const exception& e) {
+			clog << e.what() << '\n';
+		}
+		try {
+			Form	alpha("form 3", 75 , 75);
+		}
+		catch(const exception& e) {
+			clog << e.what() << '\n';
+		}
 	}
-	system("leaks bureaucrat");
 	return 0;
 }

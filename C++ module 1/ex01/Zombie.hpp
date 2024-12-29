@@ -7,15 +7,14 @@ using std::endl;
 
 class Zombie
 {
-private:
-	string	name;
 public:
-
-	void	announce(void);
-	void	set_name(string name);
+	void	announce(void) const;
+	void	set_name(const string& name);
 	Zombie(void);
-	Zombie(string name);
+	Zombie(const string& name);
 	~Zombie();
+private:
+	const string name;
 };
 
-Zombie* zombieHorde(int n, string name);
+Zombie* zombieHorde(int n, const string& name);

@@ -6,7 +6,7 @@ class Dog : public Animal
 {
 public:
 	Dog();
-	Dog(const string type);
+	Dog(const string& type);
 	Dog(const Dog& other);
 	Dog &operator=(const Dog& other);
 	void makeSound(void) const;

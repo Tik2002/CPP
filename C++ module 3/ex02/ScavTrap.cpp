@@ -2,7 +2,7 @@
 
 ScavTrap::ScavTrap(void) : ClapTrap(){cout << "ScavTrap default constructor called" << endl;}
 
-ScavTrap::ScavTrap(const string name) : ClapTrap(name)
+ScavTrap::ScavTrap(const string& name) : ClapTrap(name)
 {
 	cout << "ScavTrap constructor called" << endl;
 	this->HP = 100;

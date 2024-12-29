@@ -9,6 +9,6 @@ private:
 public:
 	HumanB(const string& name);
 	void	setWeapon(const Weapon& weapon);
-	void	attack();
+	void	attack() const;
 	~HumanB();
 };

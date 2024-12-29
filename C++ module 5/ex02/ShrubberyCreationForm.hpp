@@ -31,15 +31,15 @@ public:
 
 	struct GradeTooLowExceptionExec : public exception
 	{
-		const char* what() const throw() {return "Lowest possible grade for ShrubberyCreationForm execution is 137";}
+		const char* what() const throw();
 	};
 	struct GradeTooHighException : public exception
 	{
-		const char* what() const throw() {return "Highest possible grade for ShrubberyCreationForm signing is 1";}
+		const char* what() const throw();
 	};
 	struct GradeTooLowException : public exception
 	{
-		const char* what() const throw() {return "Lowest possible grade for ShrubberyCreationForm signing is 145";}
+		const char* what() const throw();
 	};
 };
 

@@ -8,6 +8,10 @@ static void	validate(const int grade)
 		throw Form::GradeTooLowException();
 }
 
+const char* Form::GradeTooHighException::what() const throw() {return "Highest possible grade is 1";}
+
+const char* Form::GradeTooLowException::what() const throw() {return "Lowest possible grade is 150";}
+
 Form::Form() : name("Default"), is_signed(false), sign_grade(150), execute_grade(150)  {}
 
 Form::Form(const string& name, const int sign_grade, const int execute_grade) : name(name), is_signed(false), sign_grade(sign_grade), execute_grade(execute_grade) {validate(sign_grade); validate(execute_grade);}
@@ -16,10 +20,13 @@ Form::Form(const Form& other) : sign_grade(150), execute_grade(150) {*this = oth
 
 Form &Form::operator=(const Form& other)
 {
-	const_cast<string&>(this->name) = other.name;
-	this->is_signed = other.is_signed;
-	const_cast<int&>(this->sign_grade) = other.sign_grade;
-	const_cast<int&>(this->execute_grade) = other.execute_grade;
+	if (this != &other)
+	{
+		const_cast<string&>(this->name) = other.name;
+		this->is_signed = other.is_signed;
+		const_cast<int&>(this->sign_grade) = other.sign_grade;
+		const_cast<int&>(this->execute_grade) = other.execute_grade;
+	}
 	return (*this);
 }
 

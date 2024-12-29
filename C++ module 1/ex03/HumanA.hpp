@@ -9,7 +9,7 @@ private:
 	const Weapon*	weapon;
 public:
 	HumanA(const string& name, const Weapon& weapon);
-	void	attack();
+	void	attack() const;
 	~HumanA();
 };
 

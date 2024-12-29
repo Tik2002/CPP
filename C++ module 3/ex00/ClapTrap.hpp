@@ -14,7 +14,7 @@ private:
 	int	E;
 	int	D;
 public:
-	ClapTrap(const string name);
+	ClapTrap(const string& name);
 	ClapTrap(const ClapTrap& trap);
 	ClapTrap &operator=(const ClapTrap& trap);
 	void attack(const string& target);

@@ -10,9 +10,9 @@ int t_main()
 	randomChump("Tiko");
 	second->announce();
 	third->announce();
-	delete[] first;
-	delete[] second;
-	delete[] third;
+	delete first;
+	delete second;
+	delete third;
 	return (1);
 }
 

@@ -2,7 +2,7 @@
 
 FragTrap::FragTrap(void) : ClapTrap(){cout << "FragTrap default constructor called" << endl;}
 
-FragTrap::FragTrap(const string name) : ClapTrap(name)
+FragTrap::FragTrap(const string& name) : ClapTrap(name)
 {
 	cout << "FragTrap constructor called" << endl;
 	this->HP = 100;

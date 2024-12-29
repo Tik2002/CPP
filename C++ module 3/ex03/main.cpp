@@ -3,6 +3,7 @@
 int main()
 {
 	DiamondTrap pers(string("Tika"));
+
 	DiamondTrap chlp(pers);
 	DiamondTrap agu(string("Tyoma"));
 	DiamondTrap chad("Gigachad");

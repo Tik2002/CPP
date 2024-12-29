@@ -1,6 +1,6 @@
 #include <HumanB.hpp>
 
-void	HumanB::attack()
+void	HumanB::attack() const
 {
 	cout << this->name << " attacks with their " << this->weapon->getType() << endl;
 }

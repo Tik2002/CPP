@@ -5,6 +5,7 @@
 using std::string;
 using std::cout;
 using std::cin;
+using std::clog;
 using std::endl;
 using std::ostream;
 using std::exception;
@@ -28,11 +29,11 @@ public:
 
 	struct GradeTooHighException : public exception
 	{
-		const char* what() const throw() {return "Highest possible grade is 1";}
+		const char* what() const throw();
 	};
 	struct GradeTooLowException : public exception
 	{
-		const char* what() const throw() {return "Lowest possible grade is 150";}
+		const char* what() const throw();
 	};
 private:
 	const string name;

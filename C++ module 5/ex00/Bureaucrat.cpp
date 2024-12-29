@@ -8,6 +8,10 @@ static void	validate(const int grade)
 		throw Bureaucrat::GradeTooLowException();
 }
 
+const char* Bureaucrat::GradeTooLowException::what() const throw() {return "Highest possible grade is 1";}
+
+const char* Bureaucrat::GradeTooHighException::what() const throw() {return "Highest possible grade is 1";}
+
 Bureaucrat::Bureaucrat() : name("Default"), grade(150) {}
 
 Bureaucrat::Bureaucrat(const string& name, const int grade) : name(name), grade(grade) {validate(grade);}
@@ -16,8 +20,11 @@ Bureaucrat::Bureaucrat(const Bureaucrat& other) {*this = other;}
 
 Bureaucrat &Bureaucrat::operator=(const Bureaucrat& other)
 {
-	const_cast<string&>(this->name) = other.name;
-	this->grade = other.grade;
+	if (this != &other)
+	{
+		const_cast<string&>(this->name) = other.name;
+		this->grade = other.grade;
+	}
 	return (*this);
 }
 

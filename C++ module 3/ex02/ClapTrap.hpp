@@ -15,7 +15,7 @@ protected:
 	int	D;
 public:
 	ClapTrap(void);
-	ClapTrap(const string name);
+	ClapTrap(const string& name);
 	ClapTrap(const ClapTrap& other);
 	ClapTrap &operator=(const ClapTrap& other);
 	virtual void attack(const string& target);

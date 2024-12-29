@@ -2,7 +2,7 @@
 
 DiamondTrap::DiamondTrap(void) : ClapTrap(), _name() {cout << "DiamondTrap default constructor called" << endl;}
 
-DiamondTrap::DiamondTrap(const string name) : ClapTrap(name + "_clap_name"), _name(name)
+DiamondTrap::DiamondTrap(const string& name) : ClapTrap(name + "_clap_name"), _name(name)
 {
 	cout << "DiamondTrap constructor called" << endl;
 	this->HP = 100;

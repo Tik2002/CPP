@@ -2,22 +2,68 @@
 
 int main()
 {
-	try
-	{
-		Bureaucrat ob("APO", 10);
-		RobotomyRequestForm form1("B23", 24, 25);
-		cout << form1 << endl;
-		ob.executeForm(form1);
-		ob.signForm(form1);
-		form1.execute(ob);
-		Intern chlpik;
-		AForm* form99 = chlpik.makeForm("shrubbery request", "Akckpake");
-		ob.executeForm(*form99);
-		delete form99;
+{
+	cout << endl;
+	cout << "\033[35m***********************************************\033[0m" << endl;
+	cout << endl;
+	Intern	someRandomIntern;
+	AForm*	rrf;
+
+	rrf = someRandomIntern.makeForm("robotomy request", "Bender");
+	if (rrf)
+		cout << *rrf << endl;
+	delete rrf;
 	}
-	catch(const exception& e)
+	cout << endl;
+	cout << "\033[35m***********************************************\033[0m" << endl;
+	cout << endl;
+
 	{
-		clog << e.what() << '\n';
+		cout << endl;
+		cout << "\033[35m***********************************************\033[0m" << endl;
+		cout << endl;
+		Intern	someRandomIntern;
+		AForm*	rrf;
+
+		rrf = someRandomIntern.makeForm("presidential pardon", "Tramp");
+		if (rrf)
+			cout << *rrf << endl;
+		delete rrf;
 	}
+	cout << endl;
+	cout << "\033[35m***********************************************\033[0m" << endl;
+	cout << endl;
+
+	{
+		cout << endl;
+		cout << "\033[35m***********************************************\033[0m" << endl;
+		cout << endl;
+		Intern	someRandomIntern;
+		AForm*	rrf;
+
+		rrf = someRandomIntern.makeForm("shrubbery creation", "Lolita");
+		if (rrf)
+			cout << *rrf << endl;
+		delete rrf;
+	}
+	cout << endl;
+	cout << "\033[35m***********************************************\033[0m" << endl;
+	cout << endl;
+
+	{
+		cout << endl;
+		cout << "\033[35m***********************************************\033[0m" << endl;
+		cout << endl;
+		Intern	someRandomIntern;
+		AForm*	rrf;
+
+		rrf = someRandomIntern.makeForm("Go away", "Pisciner");
+		if (rrf)
+			cout << *rrf << endl;
+		delete rrf;
+	}
+	cout << endl;
+	cout << "\033[35m***********************************************\033[0m" << endl;
+	cout << endl;
 	return 0;
 }

@@ -4,7 +4,6 @@
 
 void	Functor::operator()(const string &to_replace, const string &replace_with)
 {
-	cout << to_replace.length() << endl;
 	while(!infile.eof())
 	{
 		string tmp;
@@ -32,6 +31,4 @@ void	Functor::operator()(const string &to_replace, const string &replace_with)
 
 Functor::Functor(ifstream &in, ofstream &out): infile(in), outfile(out) {}
 
-Functor::~Functor()
-{
-}
+Functor::~Functor(){}

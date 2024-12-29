@@ -11,7 +11,7 @@ public:
 	AForm(const string& name, const int sign_grade, const int execute_grade);
 	AForm(const AForm& other);
 	AForm& operator=(const AForm& other);
-	~AForm();
+	virtual ~AForm();
 	const string& getName() const;
 	bool getSign() const;
 	void beSigned(const Bureaucrat& bur);
@@ -21,15 +21,15 @@ public:
 
 	struct FormNotSigned : public exception
 	{
-		const char* what() const throw() {return "Form doesn't signed";}
+		const char* what() const throw();
 	};
 	struct GradeTooHighException : public exception
 	{
-		const char* what() const throw() {return "Highest possible grade is 1";}
+		const char* what() const throw();
 	};
 	struct GradeTooLowException : public exception
 	{
-		const char* what() const throw() {return "Lowest possible grade is 150";}
+		const char* what() const throw();
 	};
 protected:
 	const string name;

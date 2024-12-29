@@ -1,6 +1,6 @@
 #include <ClapTrap.hpp>
 
-ClapTrap::ClapTrap(const string name) : name(name), HP(10), E(10), D(0) {cout << "ClapTrap constructor called" << endl;}
+ClapTrap::ClapTrap(const string& name) : name(name), HP(10), E(10), D(0) {cout << "ClapTrap constructor called" << endl;}
 
 ClapTrap::ClapTrap(const ClapTrap& other)
 {

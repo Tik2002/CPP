@@ -26,6 +26,7 @@ int main(int ac, char **av)
 	ofstream outfile(filename);
 	Functor replace(infile, outfile);
 	replace(av[2], av[3]);
+	cout << "Test\n";
 	infile.close();
 	outfile.close();
 	return (0);

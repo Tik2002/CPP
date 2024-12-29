@@ -6,7 +6,7 @@ class ScavTrap : public ClapTrap
 {
 public:
 	ScavTrap(void);
-	ScavTrap(const string name);
+	ScavTrap(const string& name);
 	ScavTrap(const ScavTrap& trap);
 	ScavTrap &operator=(const ScavTrap& trap);
 	void attack(const string& target);

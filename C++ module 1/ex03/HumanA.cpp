@@ -1,6 +1,6 @@
 #include <HumanA.hpp>
 
-void	HumanA::attack()
+void	HumanA::attack() const
 {
 	cout << this->name << " attacks with their " << this->weapon->getType() << endl;
 }

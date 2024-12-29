@@ -16,14 +16,14 @@ public:
 
 	struct GradeTooLowExceptionExec : public exception
 	{
-		const char* what() const throw() {return "Lowest possible grade for PresidentialPardonForm execution is 5";}
+		const char* what() const throw();
 	};
 	struct GradeTooHighException : public exception
 	{
-		const char* what() const throw() {return "Highest possible grade for PresidentialPardonForm signing is 1";}
+		const char* what() const throw();
 	};
 	struct GradeTooLowException : public exception
 	{
-		const char* what() const throw() {return "Lowest possible grade for PresidentialPardonForm signing is 25";}
+		const char* what() const throw();
 	};
 };

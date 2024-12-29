@@ -7,14 +7,14 @@ using std::endl;
 
 class Zombie
 {
-private:
-	string	name;
 public:
 
-	void	announce(void);
+	void	announce(void) const;
 
-	Zombie(string name);
+	Zombie(const string& name);
 	~Zombie();
+private:
+	const string &name;
 };
 
 Zombie*	newZombie(string name);

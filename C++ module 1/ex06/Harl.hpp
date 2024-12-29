@@ -3,6 +3,7 @@
 #include <iostream>
 using std::string;
 using std::cout;
+using std::clog;
 using std::endl;
 using std::mem_fn;
 

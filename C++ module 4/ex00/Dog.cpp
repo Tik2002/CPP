@@ -6,7 +6,7 @@ Dog::Dog() : Animal()
 	this->type = "Default";
 }
 
-Dog::Dog(const string type) : Animal()
+Dog::Dog(const string& type) : Animal()
 {
 	cout << "Dog constructor called" << endl;
 	this->type = type;
