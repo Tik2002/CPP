@@ -5,8 +5,11 @@
 #include <algorithm>
 using std::string;
 using std::cout;
+using std::exception;
 using std::cin;
 using std::clog;
+using std::find;
+using std::vector;
 using std::endl;
 
 template <typename T>

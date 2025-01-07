@@ -4,7 +4,7 @@ YELLOW	= \033[1;33m
 RESET	= \033[0;37m
 SKY		= \033[1;36m
 
-CPP = c++ -std=c++11
+CPP = c++ -std=c++98
 SRCSPATH = ./
 INCLPATH = ./
 

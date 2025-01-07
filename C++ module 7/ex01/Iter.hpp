@@ -11,4 +11,8 @@ template <typename T>
 void inc(T& val){val++;}
 
 template <typename T>
-void fPtr(T *arr, size_t len, void(*)(T&));
+void fPtr(T *arr, size_t len, void(*)(T&))
+{
+	for (size_t i = 0; i < len; i++)
+		inc(arr[i]);
+}

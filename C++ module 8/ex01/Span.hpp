@@ -6,6 +6,7 @@
 #include <cmath>
 using std::string;
 using std::cout;
+using std::exception;
 using std::cin;
 using std::clog;
 using std::endl;

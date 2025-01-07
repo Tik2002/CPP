@@ -1,12 +1,5 @@
 #include <Iter.hpp>
 
-template <typename T>
-void fPtr(T *arr, size_t len, void(*)(T&))
-{
-	for (size_t i = 0; i < len; i++)
-		inc(arr[i]);
-}
-
 int main( void ) {
 	int *i_arr = new int[LEN];
 	for (int i = 0; i < LEN; i++)
