@@ -90,8 +90,27 @@ void BitcoinExchange::insert(ifstream& infile)
 	}
 }
 
+static void firstLine(const string& line)
+{
+	size_t delim_position = line.find('|');
+
+	if (delim_position == string::npos)
+		throw std::invalid_argument("Error: file must start with date | value.");
+	string data = line.substr(0, delim_position - 1);
+	data.erase(0, data.find_first_not_of(" "));
+	data.erase(data.find_last_not_of(" ") + 1);
+	string value = line.substr(delim_position + 1);
+	value.erase(0, value.find_first_not_of(" "));
+	value.erase(value.find_last_not_of(" ") + 1);
+	if (data != "date" || value != "value")
+	{
+		throw std::invalid_argument("Error: file must start with date | value.");
+	}
+}
+
 void BitcoinExchange::exec(ifstream& infile)
 {
+	bool flag = true;
 	while(!infile.eof())
 	{
 		string tmp;
@@ -99,8 +118,15 @@ void BitcoinExchange::exec(ifstream& infile)
 
 		if (infile.eof())
 			break ;
+		if (flag)
+		{
+			flag = false;
+			firstLine(tmp);
+			continue;
+		}
 		string res;
 		size_t delim_position = tmp.find('|');
+
 		if (delim_position == string::npos)
 		{
 			clog << "Error: bad input => " << tmp << "\n";
@@ -109,6 +135,7 @@ void BitcoinExchange::exec(ifstream& infile)
 		string data = tmp.substr(0, delim_position - 1);
 		data.erase(0, data.find_first_not_of(" "));
 	    data.erase(data.find_last_not_of(" ") + 1);
+
 
 		if (!isValidDateFormat(data) || !isValidDate(data))
 		{

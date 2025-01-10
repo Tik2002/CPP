@@ -1,18 +1,10 @@
-#include <RPN.hpp>
-
-static void validation(int ac)
-{
-	if (ac != 2)
-		throw	std::invalid_argument("Error: one argument required.");
-}
+#include <PmergeMe.hpp>
 
 int main(int ac, char **av)
 {
 	try
 	{
-		validation(ac);
-		RPN exec(av[1]);
-		exec();
+		PmergeMe::sort(ac, av);
 	}
 	catch(const std::invalid_argument& e)
 	{
